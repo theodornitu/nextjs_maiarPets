@@ -1,4 +1,5 @@
 .container {
+  background-color: #121212;
   min-height: 100vh;
   padding: 0 0.5rem;
   display: flex;
@@ -8,11 +9,11 @@
 }
 
 .main {
-  padding: 5rem 0;
+  padding: 2rem 0;
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  font-size: 1.25rem;
+  font-size: 2rem;
 }

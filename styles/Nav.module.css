@@ -1,11 +1,18 @@
 .nav {
-  height: 50px;
+  height: 80px;
   padding: 10px;
-  background: #000;
-  color: #fff;
+  background: #1f2321 ;
+  color: #e2f3eb;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: left;
+  
+}
+
+.nav a:hover {
+  color: #2aaf76;
+  box-shadow: 0px 2px 0px #2aaf76;
+  transition: all 0.3s ease-in-out;
 }
 
 .nav ul {
@@ -16,5 +23,8 @@
 }
 
 .nav ul li a {
-  margin: 5px 15px;
+  margin: 10px 20px;
+  font-family: pangolinregular, sans-serif;
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;  */
+  font-size: 1.75rem;
 }

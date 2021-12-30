@@ -10,8 +10,8 @@ const Header = () => {
       <h3 className={headerStyles.description}>
         The website is currently under construction! 
       </h3>
-      <p className={headerStyles.description}>
-        Follow us on <Link href = "https://twitter.com/maiar_pets">twitter</Link> to stay up to date with the progress.
+      <p className={headerStyles.link}>
+        Follow us on <Link  href = "https://twitter.com/maiar_pets">twitter</Link> to stay up to date with the progress.
       </p>
     </div>
   )

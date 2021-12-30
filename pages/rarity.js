@@ -4,7 +4,6 @@ const rarity = () => {
   return (
     <div>
       <Meta title='Rarity' />
-      <h1>The Rarity</h1>
     </div>
   )
 }

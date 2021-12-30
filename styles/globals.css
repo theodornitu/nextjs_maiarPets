@@ -2,8 +2,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: pangolinregular, sans-serif;
 }
 
 a {
@@ -13,4 +12,13 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'pangolinregular';
+  src: url('/pangolin-regular-webfont.woff2') format('woff2'),
+       url('/pangolin-regular-webfont.woff') format('woff'),
+       url('/pangolin-regular-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
