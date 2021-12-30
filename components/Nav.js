@@ -1,5 +1,4 @@
 import Link from 'next/link'
-// import profilePic from '../public/favicon.png'
 import Image from 'next/image'
 import navStyles from '../styles/Nav.module.css'
 
@@ -9,11 +8,7 @@ const Nav = () => {
       <ul>
         <li>
           <Link href='/'>
-          <Image 
-            src='/../public/MaiarPet1.png' 
-            width={55}
-            height={55}
-          />
+            <Image src="/MaiarPet1.png" alt="MaiarPet #1" width={60} height={60} />
           </Link>
         </li>
         <li>
