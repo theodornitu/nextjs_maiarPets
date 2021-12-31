@@ -1,51 +1,71 @@
 /* Navigation ribbon */
 .nav { 
-  height: 70px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  top: 0;
   background: #1f2321 ;
   border-bottom: 1px solid #202f29;
+}
+
+/* Container for logo, menu, socials */
+.container {
   display: flex;
-}
-
-/* Maiar Pets logo */
-.nav logo {
-  display: flexbox;
-  margin: 8px 0px 8px 20px;
-  border: 2px solid rgb(42, 175, 118, 15%);
-  border-radius: 100%;
-}
-
-.nav logo:hover {
-  display: flexbox;
-  cursor: pointer;
-  border: 2px solid rgb(42, 175, 118, 100%);
-  transition: border 0.3s ease-in-out;
-}
-
-/* Navigation menu general settings */
-.nav menu{
-  display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Menu list with page links */
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin-left: 50px;
+  justify-content: space-between;
 }
 
 /* Navigation pages (individual) */
-.nav page{
-  font-family: pangolinregular, sans-serif;
-  color: #e2f3eb;
+.item {
   display: flex; 
+  flex-wrap: wrap;
+  padding-left: 0;
+  list-style: none;
   margin: 0px 35px 0px -15px;
   font-size: 1.75rem;
+  font-family: pangolinregular, sans-serif;
+  color: #e2f3eb;
 }
-
-.nav page:hover
+.item:hover
 {
   color: #2aaf76;
   box-shadow: 0px 2px 0px #2aaf76;
   transition: all 0.3s ease-in-out;
 }
 
+/* Maiar Pets logo */
+.logo {
+  display: flex;
+  position: fixed;
+  margin-left: 0.5rem;
+  margin-top:  0.5rem;
+  margin-bottom: 0.5rem;
+  border: 2px solid rgb(42, 175, 118, 10%);
+  border-radius: 100%;
+}
+.logo:hover {
+  cursor: pointer;
+  border: 2px solid rgb(42, 175, 118, 100%);
+  transition: border 0.3s ease-in-out;
+}
+
 /* Social media links, individual */
-.nav socials {
+.socials {
   display: flex;
   margin-left: auto;
   margin-right: 10px;
@@ -54,15 +74,19 @@
   color: #e2f3eb;
   font-size: 2rem;
 }
-
-.nav socials li{
+.socials li{
   margin: 0px 0px 0px 10px;
   list-style: none;
 }
-
-.nav socials li:hover
+.socials li:hover
 {
   cursor: pointer;
   color: #2aaf76;
   transition: all 0.3s ease-in-out;
 }
+
+/* @media (min-width: 768px)
+.nav-expand {
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+} */
