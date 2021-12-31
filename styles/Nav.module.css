@@ -8,13 +8,14 @@
 
 /* Maiar Pets logo */
 .nav logo {
-  display: flex;
+  display: flexbox;
   margin: 8px 0px 8px 20px;
   border: 2px solid rgb(42, 175, 118, 15%);
   border-radius: 100%;
 }
 
 .nav logo:hover {
+  display: flexbox;
   cursor: pointer;
   border: 2px solid rgb(42, 175, 118, 100%);
   transition: border 0.3s ease-in-out;
@@ -32,7 +33,7 @@
   font-family: pangolinregular, sans-serif;
   color: #e2f3eb;
   display: flex; 
-  margin: 0px 12px 0px 12px;
+  margin: 0px 35px 0px -15px;
   font-size: 1.75rem;
 }
 
@@ -47,7 +48,7 @@
 .nav socials {
   display: flex;
   margin-left: auto;
-  margin-right: 20px;
+  margin-right: 10px;
   justify-content: center;
   align-items: center;
   color: #e2f3eb;
