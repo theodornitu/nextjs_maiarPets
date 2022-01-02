@@ -1,9 +1,16 @@
-import Meta from '../components/Meta'
+// Components import
+import Meta    from '../components/Meta'
+import Nav     from '../components/Nav'
+
+// Styles import
+import planStyles  from '../styles/Plan.module.css'
 
 const plan = () => {
   return (
     <div>
-      <Meta title='Plan' />
+      <Meta />
+      <Nav />
+      <h>Our plan</h>
     </div>
   )
 }
