@@ -1,25 +1,21 @@
 /* Navigation ribbon */
 .nav { 
-  /* display: flex; */
-  /* justify-content: start; */
-  /* align-items: center; */
+  /* width: auto; */
   height: 70px;
   background: #1f2321 ;
   border-bottom: 1px solid #202f29;
-  z-index: 5;
 }
 
 /* Maiar Pets logo */
 .logo {
   display: flex;
-  position: fixed;
+  position: absolute;
   align-items: center;
   margin: 0.5rem;
   border: 2px solid rgb(42, 175, 118, 10%);
   border-radius: 100%;
   transform: rotateZ(360);
   transition: transform 0.3s;
-  z-index: 5;
 }
 .logo:hover {
   cursor: pointer;
@@ -31,13 +27,12 @@
 /* Page title (Maiar Pets text) */
 .pageTitle {
   display: flex;
-  position: fixed;
+  position: absolute;
   margin: 1.25rem;
   margin-left: 4.25rem;
   justify-content: center;
   color: #e2f3eb;
   font-size: 2rem;
-  z-index: 5;
 }
 .pageTitle:hover {
   cursor: pointer;
@@ -49,12 +44,10 @@
   justify-content: flex-end;
   color: #e2f3eb;
   font-size: 2rem;
-  z-index: 5;
 }
 .socials li{
   margin: 16px 8px;
   list-style: none;
-  z-index: 5;
 }
 .socials li:hover
 {
@@ -75,9 +68,9 @@
   position: fixed;
   margin-left: 225px;
   margin-top: -55px;
+  margin-right: auto;
   text-align: center;
-  width: auto;
-  z-index: 5;
+  /* width: auto; */
 }
 
 /* Navigation pages (individual) */
@@ -90,8 +83,6 @@
   font-size: 1.75rem;
   font-family: pangolinregular, sans-serif;
   color: #e2f3eb;
-  z-index: 5;
-
 }
 .item:hover
 {
@@ -106,23 +97,22 @@
   margin-right: 10px;
   color: #e2f3eb;
   font-size: 2rem;
-  z-index: 5;
 }
 
 @media screen and (max-width: 750px) {
-
   .menu {
     background: #1f2321;
-    position: relative;
+    position: absolute;
 
     opacity: 0;
     z-index: 1;
 
-    /* margin-top: 0px; */
     top: -100%;
-    
     transition: all 0.3s ease;
+
     margin-left: auto;
+    margin-right: auto;
+    width: auto;
   }
   .menuActive {
     background: #1f2321;
