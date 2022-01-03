@@ -102,34 +102,26 @@
 @media screen and (max-width: 750px) {
   .menu {
     background: #1f2321;
-    position: absolute;
+    position: fixed;
 
     opacity: 0;
-    z-index: 1;
-
-    top: -100%;
-    transition: all 0.3s ease;
-
-    margin-left: auto;
-    margin-right: auto;
-    width: auto;
+    right: -100%;
+    margin-top: 0px;
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
   }
   .menuActive {
     background: #1f2321;
-    position: relative;
+    position: fixed;
 
     opacity: 1;
-    z-index: 1;
-
+    right: 0;
     margin-top: 0px;
-    top: 0;
-
-    transition: all 0.3s ease;
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
   }
 
   .item {
     text-align: center;
-    width: 90vw;
+    width: 100vw;
     display: table;
     z-index: 1;
   }
