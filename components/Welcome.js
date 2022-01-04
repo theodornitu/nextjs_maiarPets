@@ -20,11 +20,11 @@ const Welcome = () => {
   return (
     <div>
       <h1 className={welcomeStyles.title}>
-        Welcome to <span>Maiar</span> Pets
+      The website is currently <span>under construction</span>!
       </h1>
-      <h3 className={welcomeStyles.description}>
+      {/* <h3 className={welcomeStyles.description}>
         The website is currently under construction! 
-      </h3>
+      </h3> */}
       <p className={welcomeStyles.link}>
         Follow us on <Link  href = "https://twitter.com/maiar_pets">twitter</Link> to stay up to date with the progress.
       </p>
