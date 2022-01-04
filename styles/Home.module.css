@@ -16,10 +16,13 @@
 .grid{
   display: grid;
   align-items: center;
+  justify-content: center;
   grid-template-areas: "b a";
   grid-template-columns: 3fr 2fr;
   max-width: 900px;
-  margin: 0 2rem;
+  margin: 0 auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .flexContent
