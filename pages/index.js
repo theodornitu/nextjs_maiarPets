@@ -6,9 +6,6 @@ import Welcome from '../components/Welcome'
 // Styles import
 import s  from '../styles/Home.module.css'
 
-// React stuff import
-import Image from 'next/image'
-
 export default function Home() {
   //Relevant styles
   const darkSection = [s.section, s.dark].join(" ");
