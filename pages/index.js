@@ -38,7 +38,6 @@ export default function Home() {
             />
           </div>
         </div>
-        
       </section>
       <section className={darkSection}>
         <div className={s.flexContent}>
