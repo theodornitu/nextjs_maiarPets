@@ -30,9 +30,8 @@ const plan = () => {
               <strong>Step #1</strong> 
             </p>
             <p>
-              We aim to integrate the Elrond dApp API directly on our website, but as we learn we will enable more features
-              for the website. Currently the launch will take place on an existing NFT marketplace which is yet to be decided.
-              Future collections will be directly minted from our website, using your wallet connect feature.
+            Maecenas ultrices lectus varius, vulputate quam vel, malesuada leo. 
+              Mauris nunc nisl, auctor vel suscipit commodo, porttitor eget erat. 
             </p>
             <p>
               <strong>Step #2</strong> 
