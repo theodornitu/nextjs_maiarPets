@@ -3,6 +3,9 @@ import Meta    from '../components/Meta'
 import Nav     from '../components/Nav'
 import Welcome from '../components/Welcome'
 
+import React, { useState } from 'react';
+import {IoPawOutline} from 'react-icons/io5';
+
 // Styles import
 import s  from '../styles/Home.module.css'
 
@@ -10,6 +13,9 @@ export default function Home() {
   //Relevant styles
   const darkSection = [s.section, s.dark].join(" ");
   const lightSection = [s.section, s.light].join(" ");
+
+  const [click, setClick] = useState(false);
+  const handleClick = () => setClick(!click);
 
   return (
     <div>
@@ -19,7 +25,7 @@ export default function Home() {
         <div className={s.grid}>
           <div>
             <h1 className={s.title}>
-              Woof, woof! Riki here!
+              Wof, woof! Riki here!
             </h1>
             <p className={s.paragraph}>
               The Chief Executive Frens Maker at Maiar Pets
@@ -29,12 +35,21 @@ export default function Home() {
             </p>
           </div>
           <div className={s.titleGridComp}>
+          <img 
+              src="/MaiarPet2.png" 
+              class = {click ? s.image2show : s.image2} 
+              alt="Riki NFT #1" 
+              width={200} 
+              height={200}  
+              onClick={handleClick}
+            />
             <img 
               src="/Riki_1.jpg" 
-              class = {s.image} 
+              class = {click ? s.imageshow : s.image} 
               alt="Riki #1" 
               width={200} 
               height={200}  
+              onClick={handleClick}
             />
           </div>
         </div>
@@ -50,27 +65,35 @@ export default function Home() {
         <div className={s.flexContent}>
           <text className={s.textcontent2}>
             <p>
-              <strong>Lorem Ipsum</strong> dolor sit amet, consectetur adipiscing elit. Vivamus et diam tellus. 
+              <strong>Henlo frens!</strong> 
             </p>
             <p>
-              Maecenas ultrices lectus varius, vulputate quam vel, malesuada leo. 
-              Mauris nunc nisl, auctor vel suscipit commodo, porttitor eget erat. 
-              Mauris consequat orci non egestas finibus. Aenean dapibus eget libero at vehicula. 
-              Fusce a elit posuere, lobortis lacus nec, blandit eros. Praesent sed ullamcorper diam. 
+              Let me tell you about me    
+              <IoPawOutline className={s.faPaw} />   
+              <IoPawOutline className={s.faPaw2} />
             </p>
             <p>
-              Donec arcu nisl, interdum vel tellus et, semper lobortis enim. In a luctus magna. 
-              Duis consequat mi imperdiet, pulvinar velit congue, hendrerit justo. 
-              Donec vulputate consequat accumsan. Morbi nisi mauris, vulputate id odio non, molestie scelerisque sem. 
-              Aliquam consectetur magna justo, ut mattis diam molestie sed. Vestibulum sit amet quam quam.
+              My favorite time of the day is nap time. 
+              I do nap in my humans bed, on their coach, on pillows, under the bed, in the office, on the floor, on the tiles ... you got the point.
+              You already know a lot about me, but what don't you know? I'm full of energy and joy, that's why everyone likes me, young people, old people, teenagers, dogs. 
+              I have a lot of frens as I am a very well socialized boy, my humas took care of that. 
             </p>
             <p>
-              Cras placerat ex vitae egestas rhoncus. Nullam et ipsum tortor. Aenean ut mauris sem. 
-              Praesent rutrum felis nec dapibus ultrices. 
-              In imperdiet, ex sollicitudin imperdiet hendrerit, ipsum turpis maximus mi, eget pharetra massa metus vitae sapien. 
-              Aliquam imperdiet consequat leo, vitae sagittis nisi fringilla eu. Nulla facilisi.
+              I can't control my feelings when I see my fav peps, so usually I just jump and give them all my affection. 
+              It's not in my nature to obey, but I often listen to my humans and, from time to time, I consider what they say is best for me. 
+            </p>
+            <p>  
+              Usually, when people see me, they say "look at this gorgeous fox"... but they don't know that I'm "half cat, half wolf". 
+              I am pretty obssesed to be clean all the time. I spend a lot of time grooming myself. So, no dirty toys or dogs around me when I am playing, please!
             </p>
           </text> 
+        </div>
+      </section>
+      <section className={darkSection}>
+        <div className={s.flexContent}>
+          <div className={s.textContent}>
+            {/* <Welcome /> */}
+          </div> 
         </div>
       </section>
     </div>

@@ -45,13 +45,33 @@
 
 .textcontent2{
   margin: 2rem;
-
 }
 
 .textcontent2 p {
   color: #e2f3eb;
   font-size: 1.5rem;
   font-weight: lighter;
+}
+
+.textcontent2 strong {
+  color: #2aaf76;
+  font-size: 2rem;
+}
+
+.faPaw {
+  margin-left: 10px;
+  font-size: 1.5rem; 
+  margin-top: 10px;
+  transform: rotate(-30deg);
+  color: #e2f3eb;
+}
+
+.faPaw2 {
+  margin-left: 10px;
+  font-size: 1.5rem; 
+  margin-top: 10px;
+  transform: rotate(30deg);
+  color: #e2f3eb;
 }
 
 .paragraph{
@@ -68,11 +88,53 @@
 }
 
 .image {
+  z-index: 1;
   margin: 2rem auto 2rem auto;
   border-radius: 50%;
   border: 6px solid #1f2321;
   width: 20rem;
   height: 20rem;
+  cursor: pointer;
+  transform:rotateY(0deg);
+  transform:rotateX(0deg);
+  transition: all 0.3s ease-in-out;
+}
+
+.imageshow {
+  z-index: -1;
+  margin: 2rem auto 2rem auto;
+  border-radius: 50%;
+  border: 6px solid #1f2321;
+  width: 20rem;
+  height: 20rem;
+  cursor: pointer;
+  transform:rotateY(180deg);
+  transform:rotateX(180deg);
+  transition: all 0.3s ease-in-out;
+}
+
+.image2 {
+  z-index: -1;
+  position: absolute;
+  margin: 2rem auto 2rem auto;
+  width: 20rem;
+  height: 20rem;
+  cursor: pointer;
+  transform:rotateY(180deg);
+  transform:rotateX(180deg);
+  transition: all 0.3s ease-in-out;
+}
+
+.image2show {
+  z-index: 1;
+  position: absolute;
+  margin: 2rem auto 2rem auto;
+  width: 20rem;
+  height: 20rem;
+  cursor: pointer;
+  transform:rotateY(0deg);
+  transform:rotateX(0deg);
+  transition: all 0.3s ease-in-out;
 }
   
 .footer {
