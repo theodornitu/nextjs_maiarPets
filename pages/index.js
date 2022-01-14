@@ -137,7 +137,7 @@ export default function Home() {
               The wacky Maiar Pets now live on the Elrond Blockchain, the one we truly believe will thrive in the future.</p>
             <p>We aim to bring together Frens from all around the world, share the same love for animals and offer belonging to our community.
               Pet Frens will also get the chance to be the collection #superstar very soon, they only need to have one Maiar Pet in the wallet.
-              Isn't this exiting? We can't wait to see your suggestions for the next steps, keep close!</p>
+              Isn't this exciting? We can't wait to see your suggestions for the next steps, keep close!</p>
             <p><strong>I want my own Maiar Pet!</strong></p>
             <p>Say no more, we're thrilled to hear that! Adopting a Maiar Pet is now easier than ever, here's how to get yours:</p>
             <ul>
