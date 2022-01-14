@@ -141,7 +141,7 @@ export default function Home() {
             <p><strong>I want my own Maiar Pet!</strong></p>
             <p>Say no more, we're thrilled to hear that! Adopting a Maiar Pet is now easier than ever, here's how to get yours:</p>
             <ul>
-              <li>Mint one on: Coming Soon! - You will recieve a random NFT from our collection</li>
+              <li>Mint one on: Coming Soon! - You will receive a random NFT from our collection</li>
               <li>Buy one on secondary market: Coming soon!</li>
             </ul>
             <p><strong>Frens Squad</strong> </p>
@@ -159,7 +159,7 @@ export default function Home() {
             </ul>
             <p>Revenues</p>
             <ul>
-              <li>Frens Squad will recieve passive income from the "Chest of Treats", the Maiar Pet Wallet. The distribution percentage will be announced soon as we develop our economy roadmap.</li>
+              <li>Frens Squad will receive passive income from the "Chest of Treats", the Maiar Pet Wallet. The distribution percentage will be announced soon as we develop our economy roadmap.</li>
             </ul>
             <p><strong>Targets</strong></p>
             <p>Our main target is to build a sustainable, long-term project bridging Elrond NFTs to real-world values in order to fulfill monthly donations to animals in need.</p>
