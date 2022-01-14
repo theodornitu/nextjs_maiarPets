@@ -97,9 +97,9 @@ export default function Home() {
             </li>
             <li>
               <img 
-                src="/MaiarPet4.png" 
+                src="/MaiarPet5.png" 
                 class = {s.listItem}  
-                alt="Riki NFT #4" 
+                alt="Riki NFT #5" 
                 width={200} 
                 height={200}  
                 onClick={handleClick}
@@ -107,9 +107,9 @@ export default function Home() {
             </li>
             <li>
               <img 
-                src="/MaiarPet5.png" 
+                src="/MaiarPet4.png" 
                 class = {s.listItem}  
-                alt="Riki NFT #5" 
+                alt="Riki NFT #4" 
                 width={200} 
                 height={200}  
                 onClick={handleClick}
@@ -130,8 +130,42 @@ export default function Home() {
       </section>
       <section className={darkSection}>
         <div className={s.flexContent}>
-          <div className={s.textContent}>
-            <Welcome />
+          <div className={s.textcontent2}>
+            <p><strong>What is Maiar Pets?</strong></p>
+            <p>A collection of 2500 algorithmically generated NFTs with laughable traits that were inspired by our beloved pets. 
+              The first collection has Riki as the #superstar, our lovely Shiba Inu. You probably already know him, right?
+              The wacky Maiar Pets now live on the Elrond Blockchain, the one we truly believe will thrive in the future.</p>
+            <p>We aim to bring together Frens from all around the world, share the same love for animals and offer belonging to our community.
+              Frens will also get the chance to be the collection #superstar very soon, they only need to have one Maiar Pet in the wallet.
+              Isn't this exiting? We can't wait to see your suggestions for the next steps, keep close!</p>
+            <p><strong>I want my own Maiar Pet!</strong></p>
+            <p>Say no more, we're thrilled to hear that! Adopting a Maiar Pet is now easier than ever, here's how to get yours:</p>
+            <ul>
+              <li>Mint one on: Coming Soon! - You will recieve a random NFT from our collection</li>
+              <li>Buy one on secondary market: Coming soon!</li>
+            </ul>
+            <p><strong>Frens Squad</strong> </p>
+            <p>Being part of the Frens Squad means having at least one Maiar Pet adopted, which comes with some benefits:</p>
+            <p>Governance </p>
+            <ul>
+              <li>You are part of the limited number of people who have real impact on future projects developed under Maiar Pets.</li>
+              <li>You can submit your own pet as #superstar. If you win the community votes, we will create a collection with your pet and you will earn royalties from it's sales.</li>
+            </ul>
+            <p>Exclusiveness </p>
+            <ul>
+              <li>Warm hearted - you are one of the few people that really helps the unfortunate animals by contributing to donations we offer to NGOs, animal shelters and hospitals.</li>
+              <li>Deals, no bills - Frens Squad will have deals on pet treats, toys and subscriptions. (Currently this will be available in Romania. With the help of Frens we will go worldwide)</li>
+              <li>Whitelisting - you take part of new projects developed under Maiar Pets just by being part of Frens Squad. Did we mentioned airdrops?</li>
+            </ul>
+            <p>Revenues</p>
+            <ul>
+              <li>Frens Squad will recieve passive income from the "Chest of Treats", the Maiar Pet Wallet. The distribution percentage will be announced soon as we develop our economy roadmap.</li>
+            </ul>
+            <p><strong>Targets</strong></p>
+            <p>Our main target is to build a sustainable, long-term project bridging Elrond NFTs to real-world values in order to fulfill monthly donations to animals in need.</p>
+            <p>With this sorted out, we strive to build a large community of animal lovers that can benefit from it. Either it be giveaways, freebies or tips and tricks.</p>
+            <p>As future plans, we aim to grow the concept of Maiar Pets Ventures, which will focus mainly on economic growth and investing in visionary projects.</p>
+            <p>Are you going to be part of it?</p>
           </div> 
         </div>
       </section>
