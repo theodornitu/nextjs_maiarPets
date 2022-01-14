@@ -56,13 +56,6 @@ export default function Home() {
       </section>
       <section className={darkSection}>
         <div className={s.flexContent}>
-          <div className={s.textContent}>
-            <Welcome />
-          </div> 
-        </div>
-      </section>
-      <section className={lightSection}>
-        <div className={s.flexContent}>
           <text className={s.textcontent2}>
             <p>
               <strong>Henlo frens!</strong> 
@@ -89,10 +82,56 @@ export default function Home() {
           </text> 
         </div>
       </section>
+      <section className={lightSection}>
+        <div className={s.flexContent}>
+          <ul className={s.listGroup}>
+            <li>
+              <img 
+                src="/MaiarPet3.png" 
+                class = {s.listItem} 
+                alt="Riki NFT #3" 
+                width={200} 
+                height={200}  
+                onClick={handleClick}
+              />
+            </li>
+            <li>
+              <img 
+                src="/MaiarPet4.png" 
+                class = {s.listItem}  
+                alt="Riki NFT #4" 
+                width={200} 
+                height={200}  
+                onClick={handleClick}
+              />
+            </li>
+            <li>
+              <img 
+                src="/MaiarPet5.png" 
+                class = {s.listItem}  
+                alt="Riki NFT #5" 
+                width={200} 
+                height={200}  
+                onClick={handleClick}
+              />
+            </li>
+            <li>
+              <img 
+                src="/MaiarPet6.png" 
+                class = {s.listItem} 
+                alt="Riki NFT #6" 
+                width={200} 
+                height={200}  
+                onClick={handleClick}
+              />
+            </li>
+          </ul>
+        </div>
+      </section>
       <section className={darkSection}>
         <div className={s.flexContent}>
           <div className={s.textContent}>
-            {/* <Welcome /> */}
+            <Welcome />
           </div> 
         </div>
       </section>

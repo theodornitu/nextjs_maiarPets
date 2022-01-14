@@ -153,6 +153,29 @@
   flex-grow: 1;
 }
 
+.listGroup {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0.25rem;
+}
+
+.listGroup li {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0.25rem;
+}
+
+.listItem {
+  border-radius: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  height: auto;
+}
+
 @media screen and (max-width: 750px) {
   .grid{
     display: flex;
@@ -162,5 +185,13 @@
     margin: 0 2rem;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
+  }
+
+  .listItem {
+    border-radius: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    height: auto;
   }
 }
