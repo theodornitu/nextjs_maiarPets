@@ -132,6 +132,7 @@ export default function Home() {
         <div className={s.flexContent}>
           <div className={s.textcontent2}>
             <p><strong>What is Maiar Pets?</strong></p>
+            <p>A community project that aims to donate monthly to help animals in need and offer real-life benefits and rewards for warm-hearted Maiar Pets NFT owners.</p>
             <p>A collection of 2500 algorithmically generated NFTs with laughable traits that were inspired by our beloved pets. 
               The first collection has Riki as the #superstar, our lovely Shiba Inu. You probably already know him, right?
               The wacky Maiar Pets now live on the Elrond Blockchain, the one we truly believe will thrive in the future.</p>
@@ -161,6 +162,8 @@ export default function Home() {
             <ul>
               <li>Frens Squad will receive passive income from the "Chest of Treats", the Maiar Pet Wallet. The distribution percentage will be announced soon as we develop our economy roadmap.</li>
             </ul>
+            <p><strong>What about value?</strong></p>
+            <p>We have a unique plan that will be disclosed shortly before the launch. We really like Beni's philosophy "slowly, then suddenly".</p>
             <p><strong>Targets</strong></p>
             <p>Our main target is to build a sustainable, long-term project bridging Elrond NFTs to real-world values in order to fulfill monthly donations to animals in need.</p>
             <p>With this sorted out, we strive to build a large community of animal lovers that can benefit from it. Either it be giveaways, freebies or tips and tricks.</p>

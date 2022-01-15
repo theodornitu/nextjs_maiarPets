@@ -37,6 +37,12 @@
   .textcontent2{
     margin: 1rem 2rem 1rem 2rem;
   }
+
+  .textcontent2 li {
+    color: #e2f3eb;
+    font-size: 1.25rem;
+    font-weight: lighter;
+  }
   
   .textcontent2 p {
     color: #e2f3eb;
@@ -69,4 +75,16 @@
     cursor: pointer;
     color: #2aaf76;
     transition: all 0.3s ease-in-out;
+  }
+
+  .link {
+    color: #e2f3eb;
+  }
+  
+  .link a:hover,
+  .link a:link,
+  .link a:focus,
+  .link a:active {
+    color: #2aaf76;
+    text-decoration: underline;
   }

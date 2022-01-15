@@ -26,34 +26,41 @@ const plan = () => {
       <section className={lightSection}>
         <div className={s.flexContent}>
           <text className={s.textcontent2}>
+            <p><strong>Status quo</strong></p>
             <p>
-              <strong>Step #1</strong> 
+              We're currently working on updating the website to the latest data and information, creating and populating the Discord group and creating artwork for the NFT collection.<br/>
+              The website core is done, the main components are created. This will help us build the dApp integration in the future.
             </p>
-            <p>
-            Maecenas ultrices lectus varius, vulputate quam vel, malesuada leo. 
-              Mauris nunc nisl, auctor vel suscipit commodo, porttitor eget erat. 
+
+            <p><strong>Step #1</strong></p>
+            <p>Launching the first NFT collection under Maiar Pets, featuring our #superstar Riki. <br/>
+              This collection has unique body traits that were inspired by our beloved dog, Riki. 
             </p>
-            <p>
-              <strong>Step #2</strong> 
+            <p>On top of his brilliant appearance, we sprinkled some weird accessories and expressions that will make your #profilepic unique and funny.</p>
+            <p>Right after the collection launch, we will shift our focus on building the dApp integration. This will be the foundation for future development, 
+              as we're looking into learning how to develop smart contracts. Of course, this will also require more people in the team, which we took into account already.
             </p>
-            <p>
-              Maecenas ultrices lectus varius, vulputate quam vel, malesuada leo. 
-              Mauris nunc nisl, auctor vel suscipit commodo, porttitor eget erat. 
+
+            <p><strong>Step #2</strong></p>
+            <p>Having the website sorted out, the collection launched and the funds prepared, we will announce the first partnerships.</p>
+            <p>This is an important step as it means that some NGOs, animal hospitals or shelters already embarked with us on this adventure and the best is yet to come. </p>
+            <p>This step will focus on collecting the needs of each entity, establish the budgets and align on the steps needed to ensure the needs are met.  <br/>
+              Here, the Frens Squad can also suggest NGOs that would need our help, so we can diversify our donation portfolio.
             </p>
-            <p>
-              <strong>Step #3</strong> 
+
+            <p><strong>Step #3</strong></p>
+            <p>The moment you'll all be waiting for: Call for Frens! We need #superstars here, so you will need to submit your own lovely pet for the #superstar job.</p>
+            <p>The next #superstar will not have to work that hard, just a few pictures to highlight it's beauty and we're finished. Also, more info regarding the economy of #superstars will be announced shortly.</p>
+            <p>This call for #superstars will bring to the table a lot of interesting NFTs to be generated, so you guessed it: we need a roadmap! This roadmap will be decided by Frens Squad in the near future.</p>
+            
+            <p><strong>Step #4</strong></p>
+            <p>We've come so far, yet still much to go. But the end is far from being here, 
+              we've built a great community of frens from all over the world, we've helped animals in need, 
+              we've conquered the #profilepic challenge with cute pets on social media.
             </p>
-            <p>
-              Maecenas ultrices lectus varius, vulputate quam vel, malesuada leo. 
-              Mauris nunc nisl, auctor vel suscipit commodo, porttitor eget erat. 
-            </p>
-            <p>
-              <strong>Step #4</strong> 
-            </p>
-            <p>
-              Maecenas ultrices lectus varius, vulputate quam vel, malesuada leo. 
-              Mauris nunc nisl, auctor vel suscipit commodo, porttitor eget erat. 
-            </p>
+            <p>Maiar Pets Ventures becomes our focus, leveraging the specific percentage from Chest of Treats to aquire tokens, NFTs from visionary projects built on Elrond Network to further grow. </p>
+            <p>This will also be relevant for the Frens Squad, as some of the investments (tokens, NFTs) will come down the ladder to our Frens, the ones that helped us get up. </p>
+            <p>During this period, our community will drive the activities, as we put our faith in the hands of Frens. You will be able to come with project ideas or vote for existing ones, having the chance to obtain a booster from Maiar Pets.</p>
           </text> 
         </div>
       </section>

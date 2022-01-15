@@ -13,7 +13,7 @@ const Welcome = () => {
   return (
     <div>
       <h1 className={welcomeStyles.title}>
-      The website is currently <span>under construction</span>!
+      Rarity Map will be available <span>shortly after launch</span>!
       </h1>
       <p className={welcomeStyles.link}>
         Follow us on <Link  href = "https://twitter.com/maiar_pets">Twitter</Link> or <Link href="https://www.instagram.com/riki.shibainu/">Instagram</Link> to stay up to date with the progress.
