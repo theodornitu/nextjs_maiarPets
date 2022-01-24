@@ -67,7 +67,7 @@ export default function Home() {
             </p>
             <p>
               My favorite time of the day is nap time. 
-              I do nap in my humans bed, on their coach, on pillows, under the bed, in the office, on the floor, on the tiles ... you got the point.
+              I do nap in my humans bed, on their sofa, on pillows, under the bed, in the office, on the floor, on the tiles ... you got the point.
               You already know a lot about me, but what don't you know? I'm full of energy and joy, that's why everyone likes me, young people, old people, teenagers, dogs. 
               I have a lot of frens as I am a very well socialized boy, my humas took care of that. 
             </p>
@@ -145,6 +145,21 @@ export default function Home() {
               <li>Mint one on: Coming Soon! - You will receive a random NFT from our collection</li>
               <li>Buy one on secondary market: Coming soon!</li>
             </ul>
+          </div>
+        </div>
+      </section>
+      <section className={lightSection}>
+        <div className={s.flexContent}>
+          <img 
+            src="/RikiPost1.png" 
+            class = {s.postItem} 
+            alt="Next steps?"  
+          />
+        </div>
+      </section>
+      <section className={darkSection}>
+        <div className={s.flexContent}>
+          <div className={s.textcontent2}>
             <p><strong>Frens Squad</strong> </p>
             <p>Being part of the Frens Squad means having at least one Maiar Pet adopted, which comes with some benefits:</p>
             <p>Governance </p>
@@ -168,8 +183,16 @@ export default function Home() {
             <p>Our main target is to build a sustainable, long-term project bridging Elrond NFTs to real-world values in order to fulfill monthly donations to animals in need.</p>
             <p>With this sorted out, we strive to build a large community of animal lovers that can benefit from it. Either it be giveaways, freebies or tips and tricks.</p>
             <p>As future plans, we aim to grow the concept of Maiar Pets Ventures, which will focus mainly on economic growth and investing in visionary projects.</p>
-            <p>Are you going to be part of it?</p>
           </div> 
+        </div>
+      </section>
+      <section className={lightSection}>
+        <div className={s.flexContent}>
+          <img 
+            src="/RikiPost2.png" 
+            class = {s.postItem} 
+            alt="Are you going to be part of it?"  
+          />
         </div>
       </section>
     </div>

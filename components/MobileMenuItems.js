@@ -10,8 +10,8 @@ export const MobileMenuItems = [
       cName: 'dropdown-link'
     },
     {
-      title: 'rarity',
-      path: '/rarity',
+      title: 'traits',
+      path: '/traits',
       cName: 'dropdown-link'
     },
     {

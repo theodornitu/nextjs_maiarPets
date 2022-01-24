@@ -53,7 +53,7 @@ const Nav = () => {
             <Link href='/plan' onClick={closeMobileMenu}>plan</Link>
           </li>
           <li className={navStyles['item']}>
-            <Link href='/rarity' onClick={closeMobileMenu}>rarity</Link>
+            <Link href='/traits' onClick={closeMobileMenu}>traits</Link>
           </li>
           <li className={navStyles['item']}>
             <Link href='/faq' onClick={closeMobileMenu}>faq</Link>

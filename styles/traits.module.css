@@ -42,3 +42,14 @@ border-bottom: 1px solid #181e1b;
     color: #2aaf76;
     font-size: 2rem;
 }
+
+.postItem {
+    display: flex;
+    max-width: 900px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 0;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}

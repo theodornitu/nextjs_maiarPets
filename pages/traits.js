@@ -5,10 +5,10 @@ import Nav     from '../components/Nav'
 import Link from 'next/link'
 
 // Styles import
-import s  from '../styles/Rarity.module.css'
+import s  from '../styles/traits.module.css'
 import Welcome from '../components/Welcome'
 
-const rarity = () => {
+const traits = () => {
   const darkSection = [s.section, s.dark].join(" ");
   const lightSection = [s.section, s.light].join(" ");
   return (
@@ -22,8 +22,17 @@ const rarity = () => {
           </text>
         </div>
       </section>
+      <section className={darkSection}>
+        <div className={s.flexContent}>
+          <img 
+            src="/TraitMapV2.png" 
+            class = {s.postItem} 
+            alt="Traits of Maiar Pets' first #superstar, Riki"  
+          />
+        </div>
+      </section>
     </div>
   )
 }
 
-export default rarity
+export default traits

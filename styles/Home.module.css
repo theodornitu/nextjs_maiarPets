@@ -179,6 +179,17 @@
   height: auto;
 }
 
+.postItem {
+    display: flex;
+    max-width: 900px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 0;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
 @media screen and (max-width: 750px) {
   .grid{
     display: flex;
