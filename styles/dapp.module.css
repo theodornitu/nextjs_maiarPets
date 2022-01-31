@@ -1,0 +1,57 @@
+.buttonList {
+    margin: 0;
+    padding: 0;
+    max-width: 900px;
+    list-style: none;
+    display: flex;
+}
+
+.buttonList li{
+    margin: 0.5rem;
+}
+
+.button {
+    font-family: pangolinregular, sans-serif;
+    width: 120px;
+    height: 40px;
+    background-color: #1f2321;
+    border: 0;
+    color: #e2f3eb;
+    border-radius: 0.5rem;
+    font-size: 1.25rem;
+}
+
+.button:hover {
+    background-color: #2aaf76;
+    cursor: pointer;
+}
+
+.textBox {
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loginTitle {
+    margin-top: 2rem;
+    color: #e2f3eb;
+    font-size: 1.5rem;
+}
+
+@media screen and (max-width: 750px) {
+    .buttonList {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 900px;
+        display: block;
+    }
+
+    .button {
+        width: 80vw;
+    }
+
+    .buttonList li{
+        margin: 0.75rem;
+    }
+  }
