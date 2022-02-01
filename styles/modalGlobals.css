@@ -40,6 +40,19 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0.5rem; 
 }
 
+.mx-lg-4 {
+  margin-right: 1.5rem !important; 
+}
+
+.ml-lg-4,
+.mx-lg-4 {
+  margin-left: 1.5rem !important; 
+}
+
+.p-4 {
+  padding: 1.5rem !important; 
+}
+
 .modal-container .modal-dialog .modal-card .modal-card-body {
   border-radius: 0.25rem; 
 }
@@ -50,6 +63,13 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: unset; 
   color: #e2f3eb;
   font-size: 1.5rem;
+}
+
+.card-body {
+  padding: 40px !important; 
+  flex: 1 1 auto;
+  min-height: 1px;
+  padding: 1.25rem;
 }
 
 .w-100 {
@@ -79,6 +99,16 @@ h1, h2, h3, h4, h5, h6 {
 .pb-2,
 .py-2 {
   padding-bottom: 0.5rem !important; 
+}
+
+.pr-4,
+.px-4 {
+  padding-right: 1.5rem !important;
+}
+
+.mt-4,
+.my-4 {
+  margin-top: 1.5rem !important; 
 }
 
 .mb-0,
@@ -119,6 +149,18 @@ h1, h2, h3, h4, h5, h6 {
 .btn:hover {
   color: #2aaf76;
   cursor: pointer;
+}
+
+.btn-primary {
+  color: #e2f3eb;
+  background-color: #1f2321;
+  border-color: #373d3a; 
+}
+
+.btn-primary:hover {
+  color: #e2f3eb;
+  background-color: #2aaf76;
+  border-color: #39ca8b; 
 }
 
 .login-button_qrCodeSvgContainer {
