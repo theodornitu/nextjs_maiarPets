@@ -9,7 +9,7 @@ import dappStyles from '../styles/dapp.module.css'
 
 
 // Blockchain stuff
-import { AuthenticatedRoutesWrapper, DappUI, useGetLoginInfo, logout } from '@elrondnetwork/dapp-core';
+import { AuthenticatedRoutesWrapper, DappUI, useGetLoginInfo } from '@elrondnetwork/dapp-core';
 import routes, { routeNames } from '../routes';
 
 const dapp = () => {
@@ -35,7 +35,7 @@ const dapp = () => {
                     Select login method
                 </div>
             </div>
-            <div className={dappStyles.textBox}>
+            <div className={dappStyles.textBox2}>
                 <ul className={dappStyles.buttonList}>
                     <li>
                         <DappUI.ExtensionLoginButton

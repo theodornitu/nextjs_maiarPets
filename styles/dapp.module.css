@@ -33,6 +33,13 @@
     justify-content: center;
 }
 
+.textBox2 {
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .loginTitle {
     margin-top: 2rem;
     color: #e2f3eb;
