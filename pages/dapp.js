@@ -64,7 +64,6 @@ const dapp = () => {
                             loginButtonText={'Maiar'}
                             buttonClassName={dappStyles.button}
                             className='login-button'
-                            loginButtonText= 'Maiar App'
                         />
                     </li>
                 </ul>

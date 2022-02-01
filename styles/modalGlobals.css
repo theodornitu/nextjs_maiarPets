@@ -67,9 +67,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .card-body {
   padding: 40px !important; 
-  flex: 1 1 auto;
+  /* flex: 1 1 auto;
   min-height: 1px;
-  padding: 1.25rem;
+  padding: 1.25rem; */
 }
 
 .w-100 {
@@ -153,8 +153,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .btn-primary {
   color: #e2f3eb;
-  background-color: #1f2321;
-  border-color: #373d3a; 
+  background-color: #2aaf76;
+  border-color: #39ca8b; 
 }
 
 .btn-primary:hover {
@@ -182,6 +182,10 @@ h1, h2, h3, h4, h5, h6 {
 .login-button_leadText {
   font-size: 1rem;
 }
+
+.lead {
+  font-size: 1.25rem;
+  font-weight: 300; }
 
 @media screen and (max-width: 750px) {
   .modal-container {
