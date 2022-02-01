@@ -61,7 +61,7 @@ const dapp = () => {
                     <li>
                         <DappUI.WalletConnectLoginButton
                             callbackRoute={routeNames.dashboard}
-                            loginButtonText={'Maiar'}
+                            // loginButtonText={'Maiar'}
                             buttonClassName={dappStyles.button}
                             className='login-button'
                         />
