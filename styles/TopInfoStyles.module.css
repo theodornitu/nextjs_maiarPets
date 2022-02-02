@@ -1,0 +1,60 @@
+.gridTop{
+    display: grid;
+    grid-template-columns: 0.75fr 0.75fr 0.75fr;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wTitle {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    color: #e2f3eb;
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin: auto;
+}
+
+.text {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    color: #e2f3eb;
+    font-weight: 300;
+    font-size: 0.9rem;
+    margin: auto;
+}
+
+.dataComponent {
+    margin:auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 220px;
+    height: 80px;
+    background-color: #1f2321;
+    border: 1px solid #202f29;
+    border-radius: 10px;
+    box-shadow: 0px 10px 30px 0 rgba(0, 0, 0, 0.4);
+    background-clip: border-box;
+}
+
+.textField {
+    display: flex;
+    flex-direction: column;
+    margin: 0.75rem;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media screen and (max-width: 750px) {
+    .gridTop{
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 900px;
+        display: block;
+    }
+    .dataComponent {
+        width: 80vw;
+    }
+    .textField {
+        position: relative;
+    }
+}
