@@ -27,12 +27,14 @@ import { contractAddress, network } from '../config';
 import routes from '../routes';
 
 const dashboard = () => {
-  const darkSection = [s.section, s.dark].join(" ");
-  const lightSection = [s.section, s.light].join(" ");
-
+  //Vars to be used
   var txStatus;
   var txHash;
   var smallTxHash;
+
+  //Section styles
+  const darkSection = [s.section, s.dark].join(" ");
+  const lightSection = [s.section, s.light].join(" ");
 
   //Tx Sent handling
   const [isTxSent, setClick] = useState(false);
