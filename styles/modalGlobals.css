@@ -6,6 +6,8 @@
   background-color: #1f2321;
   border-radius: 10px;
   transform: translateY(-7vh);
+  box-shadow: 0px 0px 40px 2px rgba(0, 0, 0, 0.8);
+  border: 1px solid #202f29;
 }
 
 .text-danger {
@@ -168,7 +170,221 @@ h1, h2, h3, h4, h5, h6 {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
+.text-white {
+  color: #fff !important; 
+}
+
+.icon-state {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%; 
+}
+
+.icon-state.half {
+  width: 3rem;
+  height: 3rem; 
+}
+
+.bg-danger {
+  background-color: #dc3545 !important; 
+}
+
+.bg-warning {
+  background-color: #ffc107 !important; 
+}
+
+.bg-success {
+  background-color: #28a745 !important; 
+}
+
+.mt-auto,
+.my-auto {
+  margin-top: auto !important; 
+}
+
+.mr-auto,
+.mx-auto {
+  margin-right: auto !important; 
+}
+
+.mb-auto,
+.my-auto {
+  margin-bottom: auto !important; 
+}
+
+.ml-auto,
+.mx-auto {
+  margin-left: auto !important; 
+}
+
+.extension-modal_icon {
+  width: 50px;
+}
+
+.extension-modal_wrapper {
+  width: 50vw;
+  height: auto;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+.extension-modal_title {
+  color: #2aaf76;
+  font-size: 1.5rem;
+}
+
+.extension-modal_description {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1rem;
+  color: #e2f3eb;
+  margin-bottom: 2rem;
+}
+
+.extension-modal_closeBtn {
+  width: 80px;
+  height: 35px;
+  background-color: #1e6144;
+}
+
+.extension-modal_closeBtn:hover {
+  width: 80px;
+  height: 35px;
+  background-color: #2aaf76;
+  color:#e2f3eb;
+}
+
+.extension {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  width: 50vw;
+  box-shadow: 0px 0px 40px 5px rgba(0, 0, 0, 0.8);
+  border: 1px solid #202f29;
+}
+
+.wallet-connect-modal_icon {
+  width: 50px;
+}
+
+.wallet-connect-modal_wrapper {
+  width: 50vw;
+  height: auto;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+.wallet-connect-modal_title {
+  color: #2aaf76;
+  font-size: 1.5rem;
+}
+
+.wallet-connect-modal_description {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1rem;
+  color: #e2f3eb;
+  margin-bottom: 2rem;
+}
+
+.wallet-connect-modal_closeBtn {
+  width: 80px;
+  height: 35px;
+  background-color: #1e6144;
+}
+
+.wallet-connect-modal_closeBtn:hover {
+  width: 80px;
+  height: 35px;
+  background-color: #2aaf76;
+  color:#e2f3eb;
+}
+
+.wallet-connect {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  width: 50vw;
+  box-shadow: 0px 0px 40px 5px rgba(0, 0, 0, 0.8);
+  border: 1px solid #202f29;
+}
+
+.login-modal-content_icon {
+  width: 50px;
+}
+
+.login-modal-content_wrapper {
+  width: 50vw;
+  height: auto;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+.login-modal-content_title {
+  color: #2aaf76;
+  font-size: 1.5rem;
+}
+
+.login-modal-content_description {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1rem;
+  color: #e2f3eb;
+  margin-bottom: 2rem;
+}
+
+.login-modal-content_closeBtn {
+  width: 80px;
+  height: 35px;
+  background-color: #1e6144;
+}
+
+.login-modal-content_closeBtn:hover {
+  width: 80px;
+  height: 35px;
+  background-color: #2aaf76;
+  color:#e2f3eb;
+}
+
+.login-modal-content {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  width: 50vw;
+  box-shadow: 0px 0px 40px 5px rgba(0, 0, 0, 0.8);
+  border: 1px solid #202f29;
+}
+
 @media screen and (max-width: 750px) {
+  /* .modal {
+    position: absolute;
+    top: 80%;
+    left: 10vw;
+  } */
+  .extension-modal_wrapper {
+    width: 80vw;
+    height: auto;
+    left: 10vw;
+    top: 90%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  .wallet-connect-modal_wrapper {
+    width: 80vw;
+    height: auto;
+    left: 10vw;
+    top: 90%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  .login-modal-content_wrapper {
+    width: 80vw;
+    height: auto;
+    left: 10vw;
+    top: 90%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
   .modal-container {
     transform: translateY(-60%);
   }

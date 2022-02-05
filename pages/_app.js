@@ -16,8 +16,11 @@ function MyApp({ Component, pageProps }) {
       <DappProvider
       networkConfig={{ network, walletConnectBridge, walletConnectDeepLink }}
       >
-          <Component {...pageProps} />
-        
+        <DappCoreUIWrapper>
+        <NotificationModal />
+        <SignTransactionsModals />
+        <Component {...pageProps} />
+        </DappCoreUIWrapper>
       </DappProvider>
   )
 }

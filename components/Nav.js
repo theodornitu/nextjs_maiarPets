@@ -4,19 +4,18 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 // Icons import
-import { FaTwitterSquare, FaDiscord, FaBars } from 'react-icons/fa';
+import { FaTwitterSquare, FaDiscord, FaBars, FaSearch } from 'react-icons/fa';
 
 // Styles import
 import navStyles from '../styles/Nav.module.css'
 
 const Nav = () => {
   const [click, setClick] = useState(false);
-
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
 
   return (
-    <header>
+    <header onScroll={closeMobileMenu}>
       <nav className={navStyles['nav']}>
         {/* Logo */}
         <div className={navStyles.logo}>
@@ -36,7 +35,7 @@ const Nav = () => {
             </Link>
           </li>
           <li>
-            <Link href='/'>
+            <Link href='https://discord.gg/zCDqHrVEWK'>
               <FaDiscord />
             </Link>
           </li>
@@ -57,6 +56,9 @@ const Nav = () => {
           </li>
           <li className={navStyles['item']}>
             <Link href='/faq' onClick={closeMobileMenu}>faq</Link>
+          </li>
+          <li className={navStyles.itemMint}>
+            <Link href='/dapp' onClick={closeMobileMenu}>mint</Link>
           </li>
         </ul>
       </nav>

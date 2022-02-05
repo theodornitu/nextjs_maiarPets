@@ -190,6 +190,64 @@
     padding-right: 2rem;
 }
 
+.dappLink {
+  color: #e2f3eb;
+  font-size: 1.35rem;
+}
+
+.dappLink:hover {
+  color: #e2f3eb;
+  cursor: pointer;
+}
+
+.dappButton {
+  width: 40vw;
+  left: 30vw;
+  height: 50px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  background-color: #1e6144;
+  border-radius: 10px;
+}
+
+.dappButton:hover {
+  background-color: #2aaf76;
+}
+
+.dappButtonTMarket {
+  width: 40vw;
+  left: 30vw;
+  height: 50px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  background-color: #048be6;
+  border-radius: 10px;
+}
+
+.dappButtonTMarket:hover {
+  background-color: #2de5ac;
+}
+
+.dappButtonDRare {
+  width: 40vw;
+  left: 30vw;
+  height: 50px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  background-color: #89b85d;
+  border-radius: 10px;
+}
+
+.dappButtonDRare:hover {
+  background-color: #a7ca6a;
+}
+
+.dappContainer {
+  text-align: center;
+  padding-top: 1rem;
+}
+
+
 @media screen and (max-width: 750px) {
   .grid{
     display: flex;

@@ -1,0 +1,231 @@
+.btnCls {
+    font-family: pangolinregular, sans-serif;
+    width: 80px;
+    height: 40px;
+    background-color: #1e6144;
+    border: 0;
+    color: #e2f3eb;
+    border-radius: 0.5rem;
+    font-size: 1.25rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+}
+
+.btnCls:hover {
+    background-color: #2aaf76;
+    cursor: pointer;
+}
+
+.gridContainerRows {
+    display: grid;
+    grid-template-rows: 0.75fr 0.5fr 0.5fr;
+    justify-content: center;
+    align-items: center;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.txSent {
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    width: 50vw;
+    height: auto;
+    background-color: #1f2321;
+    box-shadow: 0px 0px 40px 5px rgba(0, 0, 0, 0.8);
+    border: 1px solid #202f29;
+    border-radius: 10px;
+}
+
+.txClosed {
+    display: none;
+}
+
+.txText {
+    font-size: 1.5rem;
+    color:#e2f3eb;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.txHash {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 0.75rem;
+    color:#e2f3eb;
+    text-align: center;
+}
+
+.txHash p {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 0.75rem;
+    color:#e2f3eb;
+    text-align: center;
+    text-decoration: underline;
+    margin-top:0.25rem;
+}
+
+.txHash p:hover {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 0.75rem;
+    color:#2aaf76;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.faSearch {
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+    margin-top: -0.25rem;
+}
+
+
+.textBox {
+    margin: 1.5rem;
+}
+
+.txLink {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 0.75rem;
+    color:#e2f3eb;
+    justify-content: center;
+}
+
+.txLink:hover {
+    color:#2aaf76;
+}
+
+.iconStateFailed {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.9rem;
+    width: 70px;
+    height: 70px;
+}
+
+.iconStatePending {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.9rem;
+    width: 70px;
+    height: 70px;
+    -webkit-animation-name: spin;
+    -webkit-animation-duration: 4000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: spin;
+    -moz-animation-duration: 4000ms;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: spin;
+    -ms-animation-duration: 4000ms;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+    
+    animation-name: spin;
+    animation-duration: 4000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@-ms-keyframes spin {
+    from { -ms-transform: rotate(0deg); }
+    to { -ms-transform: rotate(360deg); }
+}
+@-moz-keyframes spin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+.iconStateSuccess {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    width: 70px;
+    height: 70px;
+}
+
+.bgSuccess {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    background-color: #2aaf76;
+    color:#e2f3eb;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.bgPending {  
+    display: block;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    background-color: #ffc107;
+    color:#e2f3eb;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.bgDanger {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    background-color: #dc3545;
+    color:#e2f3eb;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 750px) {
+    .gridContainerRows {
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+    }
+    .txSent {
+        position: absolute;
+        top: 80%;
+        left: 10vw;
+        width: 80vw;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        transform: translateY(-35%);
+    }
+}

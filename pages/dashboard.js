@@ -2,24 +2,196 @@
 import Meta    from '../components/Meta';
 import Nav     from '../components/Nav';
 import TopInfo from '../components/TopInfo';
-import Link    from 'next/link';
-import React from 'react';
+
+// React stuff
+import React, { useState, useEffect } from 'react';
+import { FaCheck, FaHourglass, FaTimes, FaSearch } from 'react-icons/fa'
+import Link from 'next/link'
 
 // Styles import
 import dashStyles from '../styles/dash.module.css';
-import s  from '../styles/Home.module.css'
+import s  from '../styles/Home.module.css';
+import tstyle from '../styles/txStatus.module.css'
 
 // Blockchain stuff
-import { logout, AuthenticatedRoutesWrapper } from '@elrondnetwork/dapp-core';
-import routes, { routeNames } from '../routes';
+import { 
+  logout, 
+  AuthenticatedRoutesWrapper,
+  transactionServices,
+  refreshAccount,
+  useGetSignedTransactions
+} from '@elrondnetwork/dapp-core';
+
+// Config
+import { contractAddress, network } from '../config';
+import routes from '../routes';
 
 const dashboard = () => {
   const darkSection = [s.section, s.dark].join(" ");
   const lightSection = [s.section, s.light].join(" ");
 
+  var txStatus;
+  var txHash;
+  var smallTxHash;
+
+  //Tx Sent handling
+  const [isTxSent, setClick] = useState(false);
+  const handleClick = () => setClick(!isTxSent);
+
+  //SessionID
+  const [sessionId, setTransactionSessionId] = useState(null);
+
+  //Tx status, signed, pending, failed, executed
+  const signedTransactions = useGetSignedTransactions();
+  const currentTx = signedTransactions[sessionId];
+  if(currentTx != undefined){
+    txStatus = currentTx.transactions[currentTx.transactions.length-1].status;
+    txHash = currentTx.transactions[currentTx.transactions.length-1].hash;
+    smallTxHash = txHash.substring(0,12) + "\u2026" + txHash.substring((txHash.length-12),txHash.length);
+  }
+  
+  //Logout
   const handleLogout = () => {
     logout(`${window.location.origin}/dapp`);
   };
+
+  //Mint
+  const { sendTransactions } = transactionServices;
+  const sendPingTransaction = async () => {
+    const pingTransaction = {
+      value: '500000000000000000', //1000000000000000000
+      data: 'buy@52696b69@01', //ping
+      receiver: contractAddress
+    };
+    await refreshAccount();
+
+    const {sessionId}  = await sendTransactions({
+      transactions: pingTransaction,
+      transactionsDisplayInfo: {
+        processingMessage: 'Processing Mint transaction',
+        errorMessage: 'An error has occured during Mint',
+        successMessage: 'Mint transaction successful',
+        transactionDuration: 1000
+      }
+    });
+
+    if (sessionId != null) {
+      handleClick();
+      setTransactionSessionId(sessionId);
+    }
+  };
+
+  //Tx result types
+  const successTx = {
+    title: 'Transaction executed! Success!',
+    hash: network.explorerAddress + '/transactions/' + txHash,
+    iconClassName: tstyle.bgSuccess
+  };
+  const pendingTx = {
+    title: 'Transaction pending! Please wait!',
+    hash: network.explorerAddress + '/transactions/' + txHash,
+    iconClassName: tstyle.bgPending
+  };
+  const failedTx = {
+    title: 'Transaction failed! Please try again!',
+    hash: network.explorerAddress + '/transactions/' + txHash,
+    iconClassName: tstyle.bgDanger
+  };
+
+  //Tx result pop-up
+  function renderSwitch() {
+    switch (txStatus) {
+      case 'executed':
+        {
+          return (
+            <div className={isTxSent ? tstyle.txSent : tstyle.txClosed}>
+              <div className={tstyle.modalContainer}>
+                <div className={tstyle.gridContainerRows}>
+                  <div className={successTx.iconClassName}>
+                    <FaCheck className={tstyle.iconStateSuccess} />
+                  </div>
+                  <div className={tstyle.textBox}>
+                    <p className={tstyle.txText}>
+                      {successTx.title}
+                    </p>
+                    <div className={tstyle.txHash}>
+                      Transaction Hash:
+                      <a href={successTx.hash}>
+                        <p>
+                          <FaSearch className={tstyle.faSearch} />
+                          {smallTxHash}
+                        </p>
+                      </a>
+                    </div>
+                  </div>
+                  <button className={tstyle.btnCls} onClick={handleClick}>Close</button>
+                </div>
+              </div>
+            </div>
+          )
+        }
+      case 'pending':
+        {
+          return (
+            <div className={isTxSent ? tstyle.txSent : tstyle.txClosed}>
+              <div className={tstyle.modalContainer}>
+                <div className={tstyle.gridContainerRows}>
+                  <div className={pendingTx.iconClassName}>
+                    <FaHourglass className={tstyle.iconStatePending} />
+                  </div>
+                  <div>
+                    <p className={tstyle.txText}>
+                      {pendingTx.title}
+                    </p>
+                    <div className={tstyle.txHash}>
+                      Transaction Hash:
+                      <a href={pendingTx.hash}>
+                        <p>
+                          <FaSearch className={tstyle.faSearch} />
+                          {smallTxHash}
+                        </p>
+                      </a>
+                    </div>
+                  </div>
+                  <button className={tstyle.btnCls} onClick={handleClick}>Hide</button>
+                </div>
+              </div>
+            </div>
+          )
+        }
+      case 'failed':
+        {
+          console.log('log e swFail:');
+          return (
+            <div className={isTxSent ? tstyle.txSent : tstyle.txClosed}>
+              <div className={tstyle.modalContainer}>
+                <div className={tstyle.gridContainerRows}>
+                  <div className={failedTx.iconClassName}>
+                    <FaTimes className={tstyle.iconStateFailed} />  
+                  </div>
+                  <div>
+                    <p className={tstyle.txText}>
+                      {failedTx.title}
+                    </p>
+                    <div className={tstyle.txHash}>
+                      Transaction Hash:
+                      <a href={failedTx.hash}>
+                        <p>
+                          <FaSearch className={tstyle.faSearch} />
+                          {smallTxHash}
+                        </p>
+                      </a>
+                    </div>
+                  </div>
+                  <button className={tstyle.btnCls} onClick={handleClick}>Close</button>
+                </div>
+              </div>
+            </div>
+          )
+        }
+    }
+    return null;
+  }
 
   return (
     <div>
@@ -54,7 +226,7 @@ const dashboard = () => {
                 </div>
                 <ul className={dashStyles.mintButtons}>
                   <li>
-                    <button className={dashStyles.button}>Mint</button>
+                    <button className={dashStyles.button} onClick={sendPingTransaction}>Adopt</button>
                     </li>
                   <li>
                     <button className={dashStyles.button} onClick={handleLogout}>Logout</button>
@@ -62,10 +234,8 @@ const dashboard = () => {
                 </ul>
               </div>
             </div>
-          
-      </section>
-      
-
+          </section>
+          {renderSwitch()}
     </AuthenticatedRoutesWrapper>
     </div>
   )

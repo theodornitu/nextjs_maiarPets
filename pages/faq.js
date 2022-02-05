@@ -39,8 +39,31 @@ const faq = () => {
             
             <p><strong>How can I adopt a Maiar Pet?</strong></p>
             <ul>
-              <li>Mint one on: Coming Soon! - You will receive a random NFT from our collection</li>
-              <li>Buy one on secondary market: Coming soon!</li>
+              <li>
+                Mint one on our dapp, you will receive a random NFT from our collection.
+              </li>
+                <div className={s.dappButton}>
+                  <div className={s.dappContainer}>
+                    <div className={s.dappLink}>
+                      <Link href='/dapp'> Maiar Pets Dapp (soon) </Link>
+                    </div>
+                  </div>
+                </div>
+              <li>Buy one on secondary market:</li>
+              <div className={s.dappButtonTMarket}>
+                <div className={s.dappContainer}>
+                  <div className={s.dappLink}>
+                    <Link href='/'> Trust Market (soon) </Link>
+                  </div>
+                </div>
+              </div>
+              <div className={s.dappButtonDRare}>
+                <div className={s.dappContainer}>
+                  <div className={s.dappLink}>
+                    <Link href='/'> Dead Rare (soon) </Link>
+                  </div>
+                </div>
+              </div>
             </ul>
           </text>
         </div>
@@ -135,7 +158,7 @@ const faq = () => {
               </Link>
             </li>
             <li>
-              <Link href='/'>
+              <Link href='https://discord.gg/zCDqHrVEWK'>
                 <FaDiscord />
               </Link>
             </li>

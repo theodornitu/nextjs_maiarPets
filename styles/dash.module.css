@@ -14,30 +14,43 @@
     cursor: pointer;
 }
 
-.textBox {  
-    margin: 1rem;
-    display: flex;
-}
-
-.button {
-    width: 100px;
+.btnCls {
+    font-family: pangolinregular, sans-serif;
+    width: 80px;
     height: 40px;
-    background-color: #1f2321;
+    background-color: #1e6144;
     border: 0;
     color: #e2f3eb;
     border-radius: 0.5rem;
     font-size: 1.25rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.button:hover {
+.btnCls:hover {
     background-color: #2aaf76;
     cursor: pointer;
+}
+
+.textBox {  
+    margin: 1rem;
+    display: flex;
 }
 
 .gridContainer {
     display: grid;
     grid-template-columns: 0.6fr 0.75fr;
     justify-content: center;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.gridContainerRows {
+    display: grid;
+    grid-template-rows: 0.75fr 0.5fr 0.5fr;
+    justify-content: center;
+    align-items: center;
     max-width: 900px;
     margin-left: auto;
     margin-right: auto;
@@ -92,6 +105,52 @@
     padding: 0.5rem 0.25rem 0.5rem 0.25rem;
 }
 
+/* Modal for tx sent */
+.txSent {
+    position: absolute;
+    top: 45%;
+    left: 25%;
+    width: 50vw;
+    height: auto;
+    background-color: #1f2321;
+    box-shadow: 0px 0px 40px 5px rgba(0, 0, 0, 0.8);
+    border: 1px solid #202f29;
+    border-radius: 10px;
+}
+
+.txClosed {
+    display: none;
+}
+
+.txText {
+    font-size: 1.75rem;
+    color:#e2f3eb;
+    justify-content: center;
+}
+
+.txHash {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 0.75rem;
+    color:#e2f3eb;
+    justify-content: center;
+}
+
+.checkedIcon {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    width: 100px;
+    height: 100px;
+    background-color: #2aaf76;
+    color:#e2f3eb;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
 @media screen and (max-width: 750px) {
     .gridContainer {
         display: flex;
@@ -103,5 +162,11 @@
     }
     .imgStyle {
         margin-top: 2rem;
+    }
+    .txSent {
+        position: absolute;
+        top: 80%;
+        left: 10vw;
+        width: 80vw;
     }
 }

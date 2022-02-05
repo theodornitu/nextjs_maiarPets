@@ -2,6 +2,7 @@
 import Meta    from '../components/Meta'
 import Nav     from '../components/Nav'
 import Welcome from '../components/Welcome'
+import Link from 'next/link'
 
 import React, { useState } from 'react';
 import {IoPawOutline} from 'react-icons/io5';
@@ -142,8 +143,31 @@ export default function Home() {
             <p><strong>I want my own Maiar Pet!</strong></p>
             <p>Say no more, we're thrilled to hear that! Adopting a Maiar Pet is now easier than ever, here's how to get yours:</p>
             <ul>
-              <li>Mint one on: Coming Soon! - You will receive a random NFT from our collection</li>
-              <li>Buy one on secondary market: Coming soon!</li>
+              <li>
+                Mint one on our dapp, you will receive a random NFT from our collection.
+              </li>
+                <div className={s.dappButton}>
+                  <div className={s.dappContainer}>
+                    <div className={s.dappLink}>
+                      <Link href='/dapp'> Maiar Pets Dapp (soon) </Link>
+                    </div>
+                  </div>
+                </div>
+              <li>Buy one on secondary market:</li>
+              <div className={s.dappButtonTMarket}>
+                <div className={s.dappContainer}>
+                  <div className={s.dappLink}>
+                    <Link href='/'> Trust Market (soon) </Link>
+                  </div>
+                </div>
+              </div>
+              <div className={s.dappButtonDRare}>
+                <div className={s.dappContainer}>
+                  <div className={s.dappLink}>
+                    <Link href='/'> Dead Rare (soon) </Link>
+                  </div>
+                </div>
+              </div>
             </ul>
           </div>
         </div>
