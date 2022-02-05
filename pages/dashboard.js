@@ -55,7 +55,7 @@ const dashboard = () => {
     logout(`${window.location.origin}/dapp`);
   };
 
-  //Mint
+  //Mint (temporary contract to test minting one NFT. Currently no multiple mints)
   const { sendTransactions } = transactionServices;
   const sendPingTransaction = async () => {
     const pingTransaction = {
