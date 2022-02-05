@@ -106,7 +106,7 @@ const faq = () => {
           </text>
         </div>
       </section>
-
+     
       <section className={lightSection}>
         <div className={s.flexContent}>
           <text className={s.textcontent2}>
