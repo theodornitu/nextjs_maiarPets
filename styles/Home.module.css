@@ -193,6 +193,8 @@
 .dappLink {
   color: #e2f3eb;
   font-size: 1.35rem;
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
 }
 
 .dappLink:hover {
@@ -203,7 +205,7 @@
 .dappButton {
   width: 40vw;
   left: 30vw;
-  height: 50px;
+  height: auto;
   margin-top: 1rem;
   margin-bottom: 1rem;
   background-color: #1e6144;
@@ -217,7 +219,7 @@
 .dappButtonTMarket {
   width: 40vw;
   left: 30vw;
-  height: 50px;
+  height: auto;
   margin-top: 1rem;
   margin-bottom: 1rem;
   background-color: #048be6;
@@ -225,13 +227,13 @@
 }
 
 .dappButtonTMarket:hover {
-  background-color: #2de5ac;
+  background-color: #1f97e7;
 }
 
 .dappButtonDRare {
   width: 40vw;
   left: 30vw;
-  height: 50px;
+  height: auto;
   margin-top: 1rem;
   margin-bottom: 1rem;
   background-color: #89b85d;
@@ -244,7 +246,12 @@
 
 .dappContainer {
   text-align: center;
-  padding-top: 1rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.fcIcons {
+  transform: translateY(0.25rem);
 }
 
 
@@ -267,5 +274,20 @@
     margin-bottom: 0.5rem;
     width: 300px;
     height: auto;
+  }
+
+  .dappButton {
+    width: 60vw;
+    left: 30vw;
+  }
+
+  .dappButtonTMarket {
+    width: 60vw;
+    left: 30vw;
+  }
+  
+  .dappButtonDRare {
+    width: 60vw;
+    left: 30vw;
   }
 }

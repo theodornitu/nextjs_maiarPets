@@ -126,6 +126,7 @@
     font-size: 1.75rem;
     color:#e2f3eb;
     justify-content: center;
+    transform: translateY(-20%);
 }
 
 .txHash {
@@ -165,7 +166,7 @@
     }
     .txSent {
         position: absolute;
-        top: 80%;
+        top: 60%;
         left: 10vw;
         width: 80vw;
     }

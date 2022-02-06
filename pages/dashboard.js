@@ -43,6 +43,13 @@ const dashboard = () => {
   //SessionID
   const [sessionId, setTransactionSessionId] = useState(null);
 
+  //Img handling
+  const [imgSrc, setImgSrc] = useState("/normal1.png");
+  const handleAdoptHover = () => setImgSrc("/mint1.png");
+  const handleAdoptHoverOut = () => setImgSrc("/normal1.png");
+  const handleLogoutHover = () => setImgSrc("/logout1.png");
+  const handleLogoutHoverOut = () => setImgSrc("/normal1.png");
+
   //Tx status, signed, pending, failed, executed
   const signedTransactions = useGetSignedTransactions();
   const currentTx = signedTransactions[sessionId];
@@ -207,11 +214,11 @@ const dashboard = () => {
       <section className={lightSection}>
           <div className={dashStyles.gridContainer}>
               <img 
-                src="/MaiarPet3.png" 
+                src={imgSrc}
                 class = {dashStyles.imgStyle} 
                 alt="Riki NFT #3" 
                 width={350} 
-                height={350}  
+                height={350}    
               />
               <div className={dashStyles.mintContainer}>
                 <div className={dashStyles.mintLead}>
@@ -228,10 +235,24 @@ const dashboard = () => {
                 </div>
                 <ul className={dashStyles.mintButtons}>
                   <li>
-                    <button className={dashStyles.button} onClick={sendPingTransaction}>Adopt</button>
+                    <button 
+                      className={dashStyles.button} 
+                      onClick={sendPingTransaction}
+                      onMouseOver={handleAdoptHover}
+                      onMouseOut={handleAdoptHoverOut}
+                    >
+                      Adopt
+                    </button>
                     </li>
                   <li>
-                    <button className={dashStyles.button} onClick={handleLogout}>Logout</button>
+                    <button 
+                      className={dashStyles.button} 
+                      onClick={handleLogout}
+                      onMouseOver={handleLogoutHover}
+                      onMouseOut={handleLogoutHoverOut}
+                    >
+                      Logout
+                    </button>
                   </li>
                 </ul>
               </div>

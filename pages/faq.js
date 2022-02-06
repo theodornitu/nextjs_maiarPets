@@ -125,8 +125,30 @@ const faq = () => {
         <div className={s.flexContent}>
           <text className={s.textcontent2}>
             <p><strong>What is the use of funds?</strong></p>
-            <p>We have a unique plan that will be disclosed shortly before the launch. We really like Beni's philosophy "slowly, then suddenly". </p>
-            
+            <p>Sales</p>
+            <ul>
+              <li>
+                25% - Monthly donations to community-voted NGOs distributed over a minimum of 12 months to ensure sustainability.
+              </li>
+              <li>
+                25% - Chest of Treats - Farming for the Frens Squad members - token rewards, paid weekly. Paymants will start when the collection is sold out.
+              </li>
+              <li>
+                25% - Maiar Pets Ventures - coming Soon
+              </li>
+              <li>
+                25% - #superstar royalties, business expenses, team
+              </li>
+            </ul>
+            <p>Secondary market royalties</p>
+            <ul>
+              <li>
+                During public minting - all the royalties go to Chest of Treats, providing more value for Frens Squad
+              </li>
+              <li>
+                Collection sold out - half of the royalties go to Maiar Pets Ventures, the rest to monthly donations to NGOs. 
+              </li>
+            </ul>
             <p><strong>What is the project future?</strong></p>
             <p>
             Maiar Pets is currently focusing on building a powerfull community united to sustain a monthly contribution of money to animals in need. </p>

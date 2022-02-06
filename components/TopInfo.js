@@ -40,7 +40,7 @@ const TopInfo = () => {
                 <div className={tiStyles.dataComponent}>
                     <div className={tiStyles.textField}>
                         <h2 className={tiStyles.wTitle}>
-                            Address
+                            Wallet Address
                         </h2>
                         <span className={tiStyles.text}> {smallAddress}</span>
                     </div>

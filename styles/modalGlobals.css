@@ -5,7 +5,7 @@
   max-width: min(80vw,900px);
   background-color: #1f2321;
   border-radius: 10px;
-  transform: translateY(-7vh);
+  transform: translateY(-50vh);
   box-shadow: 0px 0px 40px 2px rgba(0, 0, 0, 0.8);
   border: 1px solid #202f29;
 }
@@ -258,7 +258,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .extension {
   position: absolute;
-  top: 50%;
+  top: 80%;
   left: 25%;
   width: 50vw;
   box-shadow: 0px 0px 40px 5px rgba(0, 0, 0, 0.8);
@@ -303,7 +303,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .wallet-connect {
   position: absolute;
-  top: 50%;
+  top: 80%;
   left: 25%;
   width: 50vw;
   box-shadow: 0px 0px 40px 5px rgba(0, 0, 0, 0.8);
@@ -348,7 +348,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .login-modal-content {
   position: absolute;
-  top: 50%;
+  top: 80%;
   left: 25%;
   width: 50vw;
   box-shadow: 0px 0px 40px 5px rgba(0, 0, 0, 0.8);
@@ -386,6 +386,18 @@ h1, h2, h3, h4, h5, h6 {
     padding-bottom: 2rem;
   }
   .modal-container {
-    transform: translateY(-60%);
+    margin-top: -200px;
+  }
+
+  .extension {
+    margin-top: 200px;
+  }
+
+  .login-modal-content {
+    margin-top: 200px;
+  }
+
+  .wallet-connect {
+    margin-top: 200px;
   }
 }
