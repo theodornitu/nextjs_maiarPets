@@ -136,7 +136,7 @@ export default function Home() {
           <div className={s.textcontent2}>
             <p><strong>What is Maiar Pets?</strong></p>
             <p>A community project that aims to donate monthly to help animals in need and offer real-life benefits and rewards for warm-hearted Maiar Pets NFT owners.</p>
-            <p>A collection of 2500 algorithmically generated NFTs with laughable traits that were inspired by our beloved pets. 
+            <p>A collection of 3500 algorithmically generated NFTs with laughable traits that were inspired by our beloved pets. 
               The first collection has Riki as the #superstar, our lovely Shiba Inu. You probably already know him, right?
               The wacky Maiar Pets now live on the Elrond Blockchain, the one we truly believe will thrive in the future.</p>
             <p>We aim to bring together Frens from all around the world, share the same love for animals and offer belonging to our community.
@@ -151,7 +151,8 @@ export default function Home() {
                 <div className={s.dappButton}>
                   <div className={s.dappContainer}>
                     <div className={s.dappLink}>
-                      <Link href='/dapp'> Maiar Pets Dapp (soon) </Link>
+                      <Link href='/'> Maiar Pets Dapp (soon) </Link>
+                      {/* <Link href='/dapp'> Maiar Pets Dapp (soon) </Link> */}
                     </div>
                   </div>
                 </div>

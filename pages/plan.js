@@ -26,10 +26,14 @@ const plan = () => {
       <section className={lightSection}>
         <div className={s.flexContent}>
           <text className={s.textcontent2}>
-            <p><strong>Status quo</strong></p>
+            <p><strong>On short</strong></p>
             <p>
               We're currently planning the giveaway calendar, NGO donation map, exploring the market for talented developers and deciding on finishing touches before launch.
               The plan is slightly adjusted to reveal more exciting activities that are planned for the near future. More soon!
+            </p>
+
+            <p>
+              Interested about the detailed plan? Read below:
             </p>
 
             <p><strong>Step #1</strong></p>
@@ -38,8 +42,8 @@ const plan = () => {
             </p>
             <p>On top of his brilliant appearance, we sprinkled some weird accessories and expressions that will make your #profilepic unique and funny.</p>
             <p>Right after the collection launch, we will shift our focus on building the dApp integrations, data extraction from Elrond Blockchain and some custom APIs. 
-              This will be the foundation for future development, as we're looking into learning how to develop smart contracts. 
-              Of course, this will also require more people in the team, which we took into account already.
+              This will be the foundation for future development, as we're looking into learning how to develop smart contracts already. 
+              Of course, this will also require more people in the team, which we took into account and planned accordingly.
             </p>
 
             <p><strong>Step #2</strong></p>
@@ -62,6 +66,9 @@ const plan = () => {
             <p>Maiar Pets Ventures becomes our focus, leveraging a percentage from Chest of Treats to aquire tokens, NFTs from visionary projects built on Elrond Network to further grow. </p>
             <p>This will also be relevant for the Frens Squad, as some of the investments (tokens, NFTs) will come down the ladder to our Frens, the ones that helped us get up. </p>
             <p>During this period, our community will drive the activities, as we put our faith in the hands of Frens. You will be able to come with project ideas or vote for existing ones, having the chance to obtain a booster from Maiar Pets.</p>
+
+            <p><strong>Step #?</strong></p>
+            <p>Well, well, well. We're already far, but there is more! Will it be Metaverse? Game-Fi? What do you think will come next?</p>
           </text> 
         </div>
       </section>

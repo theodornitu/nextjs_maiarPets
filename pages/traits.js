@@ -15,17 +15,17 @@ const traits = () => {
     <div>
       <Meta />
       <Nav />
-      <section className={lightSection}>
+      {/* <section className={lightSection}>
         <div className={s.flexContent}>
           <text className={s.textcontent2}>
             <Welcome />
           </text>
         </div>
-      </section>
+      </section> */}
       <section className={darkSection}>
         <div className={s.flexContent}>
           <img 
-            src="/TraitMapV2.png" 
+            src="/TraitMapV3.png" 
             class = {s.postItem} 
             alt="Traits of Maiar Pets' first #superstar, Riki"  
           />

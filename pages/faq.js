@@ -35,7 +35,7 @@ const faq = () => {
           <text className={s.textcontent2}>
             <p><strong>What is Maiar Pets?</strong></p>
             <p>Maiar Pets is a community project that aims to donate monthly to help animals in need and offer real-life benefits and rewards for warm-hearted Maiar Pets NFT owners.</p>
-            <p>The first NFT collection of 2500 algorithmically generated NFTs is inspired by our first #superstar, Riki. It lives on Elrond Blockchain and fits perfectly your #profilepic.</p>
+            <p>The first NFT collection of 3500 algorithmically generated NFTs is inspired by our first #superstar, Riki. It lives on Elrond Blockchain and fits perfectly your #profilepic.</p>
             
             <p><strong>How can I adopt a Maiar Pet?</strong></p>
             <ul>
@@ -45,7 +45,8 @@ const faq = () => {
                 <div className={s.dappButton}>
                   <div className={s.dappContainer}>
                     <div className={s.dappLink}>
-                      <Link href='/dapp'> Maiar Pets Dapp (soon) </Link>
+                      <Link href='/'> Maiar Pets Dapp (soon) </Link>
+                      {/* <Link href='/dapp'> Maiar Pets Dapp (soon) </Link> */}
                     </div>
                   </div>
                 </div>
@@ -73,7 +74,7 @@ const faq = () => {
         <div className={s.flexContent}>
           <text className={s.textcontent2}>
             <p><strong>How many Maiar Pets can be adopted?</strong></p>
-            <p>2000 NFTs can be adopted by minting, the additional 500 NFTs will be used for community giveaways, partnerships and airdrops. </p>
+            <p>3000 NFTs can be adopted by minting, the additional 500 NFTs will be used for community giveaways, partnerships and airdrops. </p>
             
             <p><strong>What is the price for one Maiar Pet?</strong></p>
             <p>Price coming soon.</p>
@@ -131,7 +132,7 @@ const faq = () => {
                 25% - Monthly donations to community-voted NGOs distributed over a minimum of 12 months to ensure sustainability.
               </li>
               <li>
-                25% - Chest of Treats - Farming for the Frens Squad members - token rewards, paid weekly. Paymants will start when the collection is sold out.
+                25% - Chest of Treats - Farming for the Frens Squad members - token rewards, paid weekly. Farming and payments will start when the collection is sold out. 
               </li>
               <li>
                 25% - Maiar Pets Ventures - coming Soon
@@ -152,11 +153,12 @@ const faq = () => {
             <p><strong>What is the project future?</strong></p>
             <p>
             Maiar Pets is currently focusing on building a powerfull community united to sustain a monthly contribution of money to animals in need. </p>
-            <p>Besides the civic advantages that this proves, the project aims to reward Frens Squad with diverse benefits for pets and owners. </p>
+            <p>Besides the civic advantages that this proves, the project aims to reward Frens Squad with diverse benefits for pets and owners, such as deals on pet goods, gifts and gift cards. </p>
             <p>Building on top of the good will of animal lovers, we will grow outside the boundaries of a NFT project and create Maiar Pets Ventures, a concept
             dedicated to the community of warm-hearted people that trust the Elrond project. </p>
             <p>Maiar Pets Ventures will provide liquidity for visionary projects that have real-life impact on our economic system, either 
-            by tokenizing diverse economic activities or by changing the world to a sustainable one.</p>
+            by tokenizing diverse economic activities or by changing the world to a sustainable one. A part of the economic growth provided by Maiar Pets Ventures will be allocated back to Chest of Treats,
+            having the goal of filling the 25% of the initial funds used for creating it.</p>
           </text>
         </div>
       </section>

@@ -58,7 +58,8 @@ const Nav = () => {
             <Link href='/faq' onClick={closeMobileMenu}>faq</Link>
           </li>
           <li className={navStyles.itemMint}>
-            <Link href='/dapp' onClick={closeMobileMenu}>mint</Link>
+            <Link href='/' onClick={closeMobileMenu}>mint</Link>
+            {/* <Link href='/dapp' onClick={closeMobileMenu}>mint</Link> */}
           </li>
         </ul>
       </nav>
