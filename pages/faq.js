@@ -65,6 +65,13 @@ const faq = () => {
                   </div>
                 </div>
               </div>
+              <div className={s.dappButtonIsengard}>
+                <div className={s.dappContainer}>
+                  <div className={s.dappLink}>
+                    <Link href='/'> Isengard Market (soon) </Link>
+                  </div>
+                </div>
+              </div>
             </ul>
           </text>
         </div>
@@ -135,7 +142,7 @@ const faq = () => {
                 25% - Chest of Treats - Farming for the Frens Squad members - token rewards, paid weekly. Farming and payments will start when the collection is sold out. 
               </li>
               <li>
-                25% - Maiar Pets Ventures - coming Soon
+                25% - Maiar Pets Ventures
               </li>
               <li>
                 25% - #superstar royalties, business expenses, team

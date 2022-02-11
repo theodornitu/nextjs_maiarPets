@@ -22,6 +22,7 @@ const TopInfo = () => {
     const total_supply = 2500;
     const [data, setData] = useState(null);
     const [leftToMint, setLeftToMint] = useState(null);
+
     useEffect(() => {
         const fetchData = async () => {
         const result = await axios(

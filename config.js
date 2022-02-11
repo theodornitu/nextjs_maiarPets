@@ -18,7 +18,7 @@ export const walletConnectDeepLink =
 
 export const contractAddress =
   'erd1qqqqqqqqqqqqqpgq88hw467yyzcmcep29t6uxaj7twtse7vtd8ssn5tgr0';
-
+  
 export const dAppName = 'MaiarPets NFT';
 
 export const network = {

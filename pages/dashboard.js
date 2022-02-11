@@ -69,7 +69,7 @@ const dashboard = () => {
   const sendPingTransaction = async () => {
     const pingTransaction = {
       value: '500000000000000000', //1000000000000000000
-      data: 'buy@52696b69@01', //ping
+      data: 'buy@52696b69@01', //ping buy@52696b69@01
       receiver: contractAddress
     };
     await refreshAccount();

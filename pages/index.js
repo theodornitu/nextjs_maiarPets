@@ -171,6 +171,13 @@ export default function Home() {
                   </div>
                 </div>
               </div>
+              <div className={s.dappButtonIsengard}>
+                <div className={s.dappContainer}>
+                  <div className={s.dappLink}>
+                    <Link href='/'> Isengard Market (soon) </Link>
+                  </div>
+                </div>
+              </div>
             </ul>
           </div>
         </div>

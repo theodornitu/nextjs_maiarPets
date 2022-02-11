@@ -143,6 +143,20 @@
     background-color: #a7ca6a;
   }
   
+  .dappButtonIsengard {
+    width: 40vw;
+    left: 30vw;
+    height: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background-color: #651bcc;
+    border-radius: 10px;
+  }
+  
+  .dappButtonIsengard:hover {
+    background-color: #762cdd;
+  }
+
   .dappContainer {
     text-align: center;
     padding-top: 0.25rem;
