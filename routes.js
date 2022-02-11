@@ -1,13 +1,11 @@
 import { dAppName } from './config';
 import Home from './pages/dapp';
 import Dashboard from './pages/dashboard';
-import Transaction from './pages/transaction';
 import withPageTitle from './pages/PageTitle';
 
 export const routeNames = {
   home: '/dapp',
   dashboard: '/dashboard',
-  transaction: '/transaction',
   ledger: '/ledger',
   walletconnect: '/walletconnect'
 };
@@ -23,11 +21,6 @@ const routes = [
     title: 'Dashboard',
     component: Dashboard,
     authenticatedRoute: true
-  },
-  {
-    path: routeNames.transaction,
-    title: 'Transaction',
-    component: Transaction
   }
 ];
 
