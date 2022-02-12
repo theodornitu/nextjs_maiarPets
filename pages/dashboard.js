@@ -6,7 +6,6 @@ import TopInfo from '../components/TopInfo';
 // React stuff
 import React, { useState, useEffect } from 'react';
 import { FaCheck, FaHourglass, FaTimes, FaSearch } from 'react-icons/fa'
-import Link from 'next/link'
 
 // Styles import
 import dashStyles from '../styles/dash.module.css';
@@ -125,7 +124,7 @@ const dashboard = () => {
                     </p>
                     <div className={tstyle.txHash}>
                       Transaction Hash:
-                      <a href={successTx.hash}>
+                      <a target="_blank" href={successTx.hash}>
                         <p>
                           <FaSearch className={tstyle.faSearch} />
                           {smallTxHash}
@@ -154,7 +153,7 @@ const dashboard = () => {
                     </p>
                     <div className={tstyle.txHash}>
                       Transaction Hash:
-                      <a href={pendingTx.hash}>
+                      <a target="_blank" href={pendingTx.hash}>
                         <p>
                           <FaSearch className={tstyle.faSearch} />
                           {smallTxHash}
@@ -184,7 +183,7 @@ const dashboard = () => {
                     </p>
                     <div className={tstyle.txHash}>
                       Transaction Hash:
-                      <a href={failedTx.hash}>
+                      <a target="_blank" href={failedTx.hash}>
                         <p>
                           <FaSearch className={tstyle.faSearch} />
                           {smallTxHash}
