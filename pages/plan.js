@@ -5,6 +5,9 @@ import Nav     from '../components/Nav';
 // Styles
 import s       from '../styles/Plan.module.css'
 
+// Icons
+import { FcOk, FcClock } from "react-icons/fc";
+
 const plan = () => {
   // Build style groups
   const darkSection = [s.section, s.dark].join(" ");
@@ -27,8 +30,27 @@ const plan = () => {
         <div className={s.flexContent}>
           <text className={s.textcontent2}>
             <p><strong>On short</strong></p>
-            <p>We're currently planning the giveaway calendar, NGO donation map, exploring the market for talented developers and deciding on finishing touches before launch.
-               The plan is slightly adjusted to reveal more exciting activities that are planned for the near future. More soon!</p>
+            <p>
+              <FcOk className={s.icon}/>NFT Art, traits and growth plan <br/>
+              <FcOk className={s.icon}/>Launch Twitter, Discord, Website and Dapp <br/>
+              <FcClock className={s.icon}/>Maiar Pets frens community build-up  <br/>
+              <FcClock className={s.icon}/>Reveal partnerships  <br/>
+              <FcClock className={s.icon}/>Mint wave 1: 500 Maiar Pets NFTs @???EGLD  <br/>
+              <FcClock className={s.icon}/>Wave 1 perks airdropped/shipped to Frens Squad ($4000+ value)  <br/>
+              <FcClock className={s.icon}/>Frens Squad proposal for chosen NGOs   <br/>
+              <FcClock className={s.icon}/>Mint wave 2: 2000 Maiar Pets NFTs @???EGLD  <br/>
+              <FcClock className={s.icon}/>Start the Maiar Exchange Farming  <br/>
+              <FcClock className={s.icon}/>Wave 2 perks airdropped/shipped/paid to Frens Squad  <br/>
+              <FcClock className={s.icon}/>Frens Squad votes NGOs  <br/>
+              <FcClock className={s.icon}/>Mint wave 3: 500 Maiar Pets NFTs @???EGLD  <br/>
+              <FcClock className={s.icon}/>Roll-out of Maiar Pets Dapp upgrades <br/>
+              <FcClock className={s.icon}/>Maiar Pets #Superstar competition winner is announced  <br/>
+              <FcClock className={s.icon}/>Collections roadmap reveal - new #Superstars <br/>
+              <FcClock className={s.icon}/>First donations to community-voted NGOs   <br/>
+              <FcClock className={s.icon}/>Distribute weekly token rewards to Frens Squad  <br/>
+              <FcClock className={s.icon}/>Maiar Pets Ventures reveal  <br/>
+            </p>
+
             <p>Interested about the detailed plan? Read below:</p>
 
             <p><strong>Step #1</strong></p>
