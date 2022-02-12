@@ -1,7 +1,7 @@
-import { dAppName } from './config';
-import Home from './pages/dapp';
-import Dashboard from './pages/dashboard';
-import withPageTitle from './pages/PageTitle';
+import { dAppName }   from './config';
+import Home           from './pages/dapp';
+import Dashboard      from './pages/dashboard';
+import withPageTitle  from './pages/PageTitle';
 
 export const routeNames = {
   home: '/dapp',
@@ -9,6 +9,18 @@ export const routeNames = {
   ledger: '/ledger',
   walletconnect: '/walletconnect'
 };
+
+export const navPages = {
+  index: '/',
+  plan: '/plan',
+  traits: '/traits',
+  faq: '/faq',
+  home: '/',
+  dashboard: '/',
+  trustmarket: '/',
+  deadrare: '/',
+  isengard: '/',
+}
 
 const routes = [
   {

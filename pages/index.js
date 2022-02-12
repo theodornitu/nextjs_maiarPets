@@ -1,22 +1,25 @@
-// Components import
-import Meta    from '../components/Meta'
-import Nav     from '../components/Nav'
-import Welcome from '../components/Welcome'
-import Link from 'next/link'
+// Components
+import Meta    from '../components/Meta';
+import Nav     from '../components/Nav';
 
+// Reactjs & Nextjs
+import Link from 'next/link';
 import React, { useState } from 'react';
 import { IoPawOutline } from 'react-icons/io5';
 import { FcMoneyTransfer, FcLibrary, FcDonate, FcManager , FcCurrencyExchange } from "react-icons/fc";
 
+// Config & Helpers
+import { navPages } from '../routes';
 
-// Styles import
-import s  from '../styles/Home.module.css'
+// Styles
+import s  from '../styles/Home.module.css';
 
 export default function Home() {
-  //Relevant styles
+  // Build style groups
   const darkSection = [s.section, s.dark].join(" ");
   const lightSection = [s.section, s.light].join(" ");
 
+  // Hooks
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
 
@@ -27,42 +30,34 @@ export default function Home() {
       <section className={lightSection}>
         <div className={s.grid}>
           <div>
-            <h1 className={s.title}>
-              Wof, woof! Riki here!
-            </h1>
-            <p className={s.paragraph}>
-              The Chief Executive Frens Maker at Maiar Pets
-            </p>
-            <p className={s.caption}>
-              Learn more about the story behind my project, let's be worldwide frens!
-            </p>
+            <h1 className={s.title}>Wof, woof! Riki here!</h1>
+            <p className={s.paragraph}>The Chief Executive Frens Maker at Maiar Pets</p>
+            <p className={s.caption}>Learn more about the story behind my project, let's be worldwide frens!</p>
           </div>
           <div className={s.titleGridComp}>
-          <img 
-              src="/MaiarPet2.png" 
-              class = {click ? s.image2show : s.image2} 
-              alt="Riki NFT #1" 
-              width={200} 
-              height={200}  
-              onClick={handleClick}
-            />
             <img 
-              src="/Riki_1.jpg" 
-              class = {click ? s.imageshow : s.image} 
-              alt="Riki #1" 
-              width={200} 
-              height={200}  
-              onClick={handleClick}
-            />
+                src="/MaiarPet2.png" 
+                class = {click ? s.image2show : s.image2} 
+                alt="Riki NFT #1" 
+                width={200} 
+                height={200}  
+                onClick={handleClick}
+              />
+              <img 
+                src="/Riki_1.jpg" 
+                class = {click ? s.imageshow : s.image} 
+                alt="Riki #1" 
+                width={200} 
+                height={200}  
+                onClick={handleClick}
+              />
           </div>
         </div>
       </section>
       <section className={darkSection}>
         <div className={s.flexContent}>
           <text className={s.textcontent2}>
-            <p>
-              <strong>Henlo frens!</strong> 
-            </p>
+            <p><strong>Henlo frens!</strong> </p>
             <p>
               Let me tell you about me    
               <IoPawOutline className={s.faPaw} />   
@@ -145,14 +140,11 @@ export default function Home() {
             <p><strong>I want my own Maiar Pet!</strong></p>
             <p>Say no more, we're thrilled to hear that! Adopting a Maiar Pet is now easier than ever, here's how to get yours:</p>
             <ul>
-              <li>
-                Mint one on our dapp, you will receive a random NFT from our collection.
-              </li>
+              <li>Mint one on our dapp, you will receive a random NFT from our collection.</li>
                 <div className={s.dappButton}>
                   <div className={s.dappContainer}>
                     <div className={s.dappLink}>
-                      <Link href='/'> Maiar Pets Dapp (soon) </Link>
-                      {/* <Link href='/dapp'> Maiar Pets Dapp (soon) </Link> */}
+                      <Link href={navPages.home}> Maiar Pets Dapp (soon) </Link>
                     </div>
                   </div>
                 </div>
@@ -160,21 +152,21 @@ export default function Home() {
               <div className={s.dappButtonTMarket}>
                 <div className={s.dappContainer}>
                   <div className={s.dappLink}>
-                    <Link href='/'> Trust Market (soon) </Link>
+                    <a target="_blank" href={navPages.trustmarket}> Trust Market (soon) </a>
                   </div>
                 </div>
               </div>
               <div className={s.dappButtonDRare}>
                 <div className={s.dappContainer}>
                   <div className={s.dappLink}>
-                    <Link href='/'> Dead Rare (soon) </Link>
+                    <a target="_blank" href={navPages.deadrare}> Dead Rare (soon) </a>
                   </div>
                 </div>
               </div>
               <div className={s.dappButtonIsengard}>
                 <div className={s.dappContainer}>
                   <div className={s.dappLink}>
-                    <Link href='/'> Isengard Market (soon) </Link>
+                    <a target="_blank" href={navPages.isengard}> Isengard Market (soon) </a>
                   </div>
                 </div>
               </div>
@@ -213,30 +205,19 @@ export default function Home() {
             </ul>
             <p><strong>What about value?</strong></p>
             <p>Chest of treats <FcMoneyTransfer className={s.fcIcons} /></p>
-            {/* <img src=''>Placeholde</img> */}
             <ul>
-              <li> 
-                $EGLD goes in, yummy treats come out.
-              </li>
-              <li>
-                Who gets the treats? You know it, Frens Squad!
-              </li>
+              <li>$EGLD goes in, yummy treats come out.</li>
+              <li>Who gets the treats? You know it, Frens Squad!</li>
               <li>
                 The Chest of Treats can be seen as a project treasury, the funds allocated to it will be put to work on Maiar Exchange, 
                 farming new tokens voted by the Frens Squad. These tokens will be distributed within the Maiar Pets NFT Owners. 
               </li>
-              <li>
-                Distribution schema - do you like games? stay tuned!
-              </li>
+              <li>Distribution schema - do you like games? stay tuned!</li>
             </ul>
             <p>Maiar Pets Ventures <FcLibrary className={s.fcIcons} /></p>
             <ul>
-              <li>
-                Our obsession for value pushed us towards this concept. Being part of Frens Squad will offer you exposure to cool projects on Elrond Blockchain.
-              </li>
-              <li>
-                The investment concept behind #MPV will ensure an organic growth over time and create a sustainable economic model for Maiar Pets.
-              </li>
+              <li>Our obsession for value pushed us towards this concept. Being part of Frens Squad will offer you exposure to cool projects on Elrond Blockchain.</li>
+              <li>The investment concept behind #MPV will ensure an organic growth over time and create a sustainable economic model for Maiar Pets.</li>
             </ul>
             <p><strong>Targets</strong></p>
             <p>Our main target is to build a sustainable, long-term project bridging Elrond NFTs to real-world values in order to fulfill monthly donations to animals in need.</p>

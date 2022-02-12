@@ -10,7 +10,7 @@ import dappStyles from '../styles/dapp.module.css'
 
 // Blockchain stuff
 import { AuthenticatedRoutesWrapper, DappUI, useGetLoginInfo } from '@elrondnetwork/dapp-core';
-import routes, { routeNames } from '../routes';
+import routes, { routeNames, navPages } from '../routes';
 
 const dapp = () => {
     const Router = useRouter();
@@ -28,12 +28,10 @@ const dapp = () => {
         <Nav />
         <AuthenticatedRoutesWrapper
           routes={routes}
-          unlockRoute={'/dapp'}
+          unlockRoute={navPages.home}
         >
             <div className={dappStyles.textBox}>
-                <div className={dappStyles.loginTitle}>
-                    Select login method
-                </div>
+                <div className={dappStyles.loginTitle}>Select login method</div>
             </div>
             <div className={dappStyles.textBox2}>
                 <ul className={dappStyles.buttonList}>
@@ -61,7 +59,6 @@ const dapp = () => {
                     <li>
                         <DappUI.WalletConnectLoginButton
                             callbackRoute={routeNames.dashboard}
-                            // loginButtonText={'Maiar'}
                             buttonClassName={dappStyles.button}
                             className='login-button'
                         />
@@ -90,7 +87,7 @@ const dapp = () => {
                     <div className={dappStyles.loginRef}>
                         You can also use the refferal code:
                         <div className = {dappStyles.linkRef}>
-                            <Link href='https://get.maiar.com/referral/eayja0xs77'> eayja0xs77 </Link>
+                            <a target="_blank" href='https://get.maiar.com/referral/eayja0xs77'> eayja0xs77 </a>
                         </div>
                     </div>
                 </div>

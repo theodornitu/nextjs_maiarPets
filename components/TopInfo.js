@@ -1,25 +1,29 @@
+// Components
 
+// Reactjs & Nextjs
 import React, { useState, useEffect } from 'react';
 import axios from "axios";
+import Link from 'next/link';
 
-// Icons import
+// Config & Helpers
 
-// Styles import
+// Styles
 import tiStyles from '../styles/TopInfoStyles.module.css'
 
-// Blockchain stuff
+// Blockchain
 import { useGetAccountInfo } from '@elrondnetwork/dapp-core';
 import { network } from '../config';
 
 const TopInfo = () => {
+    //Account info
+    const showChars = 12;
     const { address, account } = useGetAccountInfo();
-    const smallAddress = 
-        address.substring(0,12) + 
-        "\u2026" + 
-        address.substring((address.length-12),address.length);
+    const explorerLink = network.explorerAddress + "/accounts/" + address;
+    const smallAddress = address.substring(0,showChars) + "\u2026" + address.substring((address.length-showChars),address.length);
 
     //NFT info
-    const total_supply = 2500;
+    const total_supply = 3500;
+    const mint_price = '0.3 EGLD';
     const [data, setData] = useState(null);
     const [leftToMint, setLeftToMint] = useState(null);
 
@@ -40,26 +44,22 @@ const TopInfo = () => {
             <div className={tiStyles.gridTop}>
                 <div className={tiStyles.dataComponent}>
                     <div className={tiStyles.textField}>
-                        <h2 className={tiStyles.wTitle}>
-                            Wallet Address
-                        </h2>
-                        <span className={tiStyles.text}> {smallAddress}</span>
+                        <h2 className={tiStyles.wTitle}> Wallet Address </h2>
+                        <span className={tiStyles.textLink}> 
+                            <a target="_blank" href={explorerLink}>{smallAddress}</a>
+                        </span>
                     </div>
                 </div>
                 <div className={tiStyles.dataComponent}>
                     <div className={tiStyles.textField}>    
-                        <h2 className={tiStyles.wTitle}>
-                            NFTs Available 
-                        </h2>
-                        <span className={tiStyles.text}> {leftToMint}/2500 </span>
+                        <h2 className={tiStyles.wTitle}> NFTs Available </h2>
+                        <span className={tiStyles.text}> {leftToMint}/{total_supply} </span>
                     </div>
                 </div>
                 <div className={tiStyles.dataComponent}>
                     <div className={tiStyles.textField}>    
-                        <h2 className={tiStyles.wTitle}>
-                            NFT Price
-                        </h2>
-                        <span className={tiStyles.text}> 0.5 EGLD </span>
+                        <h2 className={tiStyles.wTitle}> NFT Price </h2>
+                        <span className={tiStyles.text}> {mint_price} </span>
                     </div>
                 </div>
             </div>
