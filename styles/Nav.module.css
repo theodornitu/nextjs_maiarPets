@@ -64,13 +64,30 @@
 /* Menu list with page links */
 .menu {
   display: grid;
-  grid-template-columns: repeat(4,auto);
+  grid-template-columns: repeat(5,auto);
   position: absolute;
-  margin-left: 225px;
+  margin-left: 190px;
   margin-top: -55px;
   margin-right: auto;
   text-align: center;
   /* width: auto; */
+}
+
+.itemMint {
+  display: flex;
+  flex-wrap:  wrap;
+  align-items: center;
+  padding: 10px;
+  height: 40px;
+  font-size: 1.75rem;
+  font-family: pangolinregular, sans-serif;
+  color: #2aaf76;
+}
+.itemMint:hover
+{
+  color: #2aaf76;
+  box-shadow: 0px 2px 0px #2aaf76;
+  transition: all 0.3s ease-in-out;
 }
 
 /* Navigation pages (individual) */
@@ -111,11 +128,12 @@
   }
   .menuActive {
     background: #1f2321;
-    position: fixed;
-
+    position: absolute;
+    z-index: 1;
     opacity: 1;
     right: 0;
     margin-top: 0px;
+    border-bottom: 2px solid white;
     transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
   }
 
@@ -126,6 +144,19 @@
     z-index: 1;
   }
   .item:hover {
+    color: #2aaf76;
+    box-shadow: 0px 2px 0px #2aaf76;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .itemMint {
+    text-align: center;
+    width: 100vw;
+    display: table;
+    z-index: 1;
+  }
+  .itemMint:hover
+  {
     color: #2aaf76;
     box-shadow: 0px 2px 0px #2aaf76;
     transition: all 0.3s ease-in-out;

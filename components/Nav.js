@@ -1,44 +1,46 @@
-// React/Next libs import
-import React, { useState } from 'react';
-import Link from 'next/link'
+// Components
+
+// Reactjs & Nextjs
+import Link from 'next/link';
 import Image from 'next/image'
+import React, { useState } from 'react';
+import { FaTwitterSquare, FaDiscord, FaBars, FaSearch } from 'react-icons/fa';
 
-// Icons import
-import { FaTwitterSquare, FaDiscord, FaBars } from 'react-icons/fa';
+// Config & Helpers
+import { navPages } from '../routes';
 
-// Styles import
-import navStyles from '../styles/Nav.module.css'
+// Styles
+import navStyles from '../styles/Nav.module.css';
 
 const Nav = () => {
   const [click, setClick] = useState(false);
-
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
 
   return (
-    <header>
+    <header onScroll={closeMobileMenu}>
       <nav className={navStyles['nav']}>
         {/* Logo */}
         <div className={navStyles.logo}>
-          <Link href='/' onClick={closeMobileMenu}>
+          <Link href={navPages.index} onClick={closeMobileMenu}>
             <Image src="/MaiarPet1.png" alt="MaiarPet #1" width={50} height={50} />
           </Link>
         </div>
         {/* Title */}
         <div className={navStyles.pageTitle}>
-          <Link href='/' onClick={closeMobileMenu}>| Maiar Pets </Link>
+          <Link href={navPages.index} onClick={closeMobileMenu}>| Maiar Pets </Link>
         </div>
         {/* Socials links */}
         <div className={navStyles.socials}>
           <li>
-            <Link href='https://twitter.com/maiar_pets'>
+            <a target="_blank" href='https://twitter.com/maiar_pets'>
               <FaTwitterSquare />
-            </Link>
+            </a>
           </li>
           <li>
-            <Link href='/'>
+            <a target="_blank" href='https://discord.gg/zCDqHrVEWK'>
               <FaDiscord />
-            </Link>
+            </a>
           </li>
           <li className={navStyles['menuIcon']} onClick={handleClick}>
             <FaBars /> 
@@ -47,16 +49,19 @@ const Nav = () => {
         {/* Nav menu */}
         <ul className={click ? navStyles['menuActive'] : navStyles['menu']}>
           <li className={navStyles['item']}>
-            <Link href='/' onClick={closeMobileMenu}>story</Link>
+            <Link href={navPages.index} onClick={closeMobileMenu}>story</Link>
           </li>
           <li className={navStyles['item']}>
-            <Link href='/plan' onClick={closeMobileMenu}>plan</Link>
+            <Link href={navPages.plan} onClick={closeMobileMenu}>plan</Link>
           </li>
           <li className={navStyles['item']}>
-            <Link href='/traits' onClick={closeMobileMenu}>traits</Link>
+            <Link href={navPages.traits} onClick={closeMobileMenu}>traits</Link>
           </li>
           <li className={navStyles['item']}>
-            <Link href='/faq' onClick={closeMobileMenu}>faq</Link>
+            <Link href={navPages.faq} onClick={closeMobileMenu}>faq</Link>
+          </li>
+          <li className={navStyles.itemMint}>
+            <Link href={navPages.home} onClick={closeMobileMenu}>mint</Link>
           </li>
         </ul>
       </nav>

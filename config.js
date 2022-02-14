@@ -17,8 +17,8 @@ export const walletConnectDeepLink =
   'https://maiar.page.link/?apn=com.elrond.maiar.wallet&isi=1519405832&ibi=com.elrond.maiar.wallet&link=https://maiar.com/';
 
 export const contractAddress =
-  'erd1qqqqqqqqqqqqqpgquvt728n40ssd8n2qns9jrlqpwq2jc4rj4cysfuj3ad';
-
+  'erd1qqqqqqqqqqqqqpgq88hw467yyzcmcep29t6uxaj7twtse7vtd8ssn5tgr0';
+  
 export const dAppName = 'MaiarPets NFT';
 
 export const network = {
