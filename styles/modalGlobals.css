@@ -259,8 +259,8 @@ h1, h2, h3, h4, h5, h6 {
 .extension {
   position: absolute;
   top: 80%;
-  left: 25%;
-  width: 50vw;
+  left: 25vw;
+  width: 50vw; 
   box-shadow: 0px 0px 40px 5px rgba(0, 0, 0, 0.8);
   border: 1px solid #202f29;
 }

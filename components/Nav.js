@@ -31,8 +31,8 @@ const Nav = () => {
               </Link>
             </div>
             {/* Title */}
-            <div className={navStyles.pageTitle}>
-              <Link href={navPages.index} onClick={closeMobileMenu}>| Maiar Pets </Link>
+            <div className={navStyles.pageTitleContainer}>
+              <a href={navPages.index} className={navStyles.pageTitle} onClick={closeMobileMenu}>| Maiar Pets </a>
             </div>
           </div>
           {/* Nav menu */}
@@ -65,7 +65,7 @@ const Nav = () => {
                 <FaDiscord />
               </a>
             </li>
-            <li className={navStyles['menuIcon']} onClick={handleClick}>
+            <li className={navStyles.menuIcon} onClick={handleClick}>
               <FaBars /> 
             </li>
           </ul>

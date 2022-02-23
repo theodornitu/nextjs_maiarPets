@@ -1,18 +1,17 @@
 
 .gridNav {
   display: grid;
-  grid-template-columns: 30vw 40vw 30vw;
+  grid-template-columns: 29vw 40vw 29vw;
   align-items: center;
 }
 
 /* Navigation ribbon */
 .nav { 
-  /* width: auto; */
-  height: 80px;
-  background: #1f2321 ;
-  border-bottom: 1px solid #202f29;
-  align-items: center;
   display: flex;
+  align-items: center;
+  height: 80px;
+  background: #1f2321;
+  border-bottom: 1px solid #202f29;
 }
 
 .logoTitleContainer {
@@ -21,7 +20,7 @@
 }
 
 .logoContainer {
-  margin: 0 15px;
+  margin: 0 10px 0 15px;
   justify-content: flex-start;
 }  
 
@@ -39,6 +38,11 @@
   border: 2px solid rgb(42, 175, 118, 100%);
   transform: rotate(1turn);
   transition: all 0.3s;
+}
+
+.pageTitleContainer {
+  display: flex;
+  align-items: center;
 }
 
 /* Page title (Maiar Pets text) */
@@ -68,7 +72,7 @@
   font-size: 2rem;
   margin-left: 10px;
 }
-.socials li:hover
+.socials a:hover
 {
   cursor: pointer;
   color: #2aaf76;
@@ -94,8 +98,6 @@
 .itemMint:hover
 {
   color: #2aaf76;
-  /* box-shadow: 0px 2px 0px #2aaf76;
-  transition: all 0.3s ease-in-out; */
 }
 
 /* Navigation pages (individual) */
@@ -109,8 +111,6 @@
 .item:hover
 {
   color: #2aaf76;
-  /* box-shadow: 0px 2px 0px #2aaf76; */
-  /* transition: all 0.3s ease-in-out; */
 }
 
 .fa-bars {
@@ -137,6 +137,7 @@
     grid-template-columns: 65vw 35vw;
     align-items: center;
   }
+
   .socials li {
     display: grid;
     grid-template-columns: repeat(3,auto);
@@ -154,7 +155,6 @@
   }
 
   .menuActive {
-    /* width: 100vw; */
     background: #1f2321;
     position: absolute;
     right: 0;
@@ -195,6 +195,7 @@
     display: flex;
     font-size: 2rem;
     cursor: pointer;
+    padding-bottom: 5px; /* quick and dirty but let's see */
   }
   .menuIcon:hover {
     color: #2aaf76;
